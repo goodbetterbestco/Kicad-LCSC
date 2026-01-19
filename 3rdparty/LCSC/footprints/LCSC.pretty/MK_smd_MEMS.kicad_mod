@@ -58,7 +58,7 @@
 	(fp_circle (center -1.67 1.32) (end -1.64 1.32) (layer F.Fab) (width 0.06))
 	(fp_circle (center -1.61 1.50) (end -1.49 1.50) (layer Cmts.User) (width 0.24))
 	(fp_circle (center -1.31 1.80) (end -1.19 1.80) (layer F.SilkS) (width 0.24))
-	(model "/Users/evanthayer/Projects/flipdots/hardware/devices/symbols/LCSC.3dshapes/MIC-SMD_6P-L3.5-W2.7-P0.90-BL.wrl"
+	(model "${KICAD9_3DMODEL_DIR}/MIC-SMD_6P-L3.5-W2.7-P0.90-BL.step"
 		(offset (xyz 0.080 -0.000 -0.000))
 		(scale (xyz 1 1 1))
 		(rotate (xyz 0 0 270))

@@ -20,7 +20,7 @@
 	(pad 6 smd rect (at -5.18 0.00 0.00) (size 7.83 10.43) (layers F.Cu F.Paste F.Mask))
 	(fp_circle (center 5.80 5.01) (end 5.83 5.01) (layer F.Fab) (width 0.06))
 	(fp_circle (center 6.35 3.43) (end 6.55 3.43) (layer Cmts.User) (width 0.40))
-	(model "/Users/evanthayer/Projects/flipdots/hardware/devices/symbols/LCSC.3dshapes/TO-263-5-5P_L10.2-W8.7-H4.5-LS14.4-P1.70.wrl"
+	(model "${KICAD9_3DMODEL_DIR}/TO-263-5-5P_L10.2-W8.7-H4.5-LS14.4-P1.70.step"
 		(offset (xyz -1.320 -0.000 -0.000))
 		(scale (xyz 1 1 1))
 		(rotate (xyz 0 0 270))

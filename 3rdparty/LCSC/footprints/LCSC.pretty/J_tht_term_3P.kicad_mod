@@ -27,7 +27,7 @@
 	(pad 2 thru_hole circle (at 0.00 0.00 180.00) (size 2.00 2.00) (layers *.Cu *.Mask)(drill 1.3000228))
 	(pad 1 thru_hole circle (at -5.08 0.00 180.00) (size 2.00 2.00) (layers *.Cu *.Mask)(drill 1.3000228))
 	(fp_circle (center -7.62 5.50) (end -7.59 5.50) (layer F.Fab) (width 0.06))
-	(model "/Users/evanthayer/Projects/flipdots/hardware/devices/symbols/LCSC.3dshapes/CONN-TH_3P-P5.00_WJ500V-5.08-3P.wrl"
+	(model "${KICAD9_3DMODEL_DIR}/CONN-TH_3P-P5.00_WJ500V-5.08-3P.step"
 		(offset (xyz 0.300 -0.520 0.000))
 		(scale (xyz 1 1 1))
 		(rotate (xyz 0 0 0))

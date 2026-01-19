@@ -43,7 +43,7 @@
 	(pad 16 thru_hole oval (at -5.58 -1.61 0.00) (size 1.20 2.00) (layers *.Cu *.Mask)(drill oval 0.6499860000000001 1.3999972))
 	(fp_circle (center -5.73 -2.72) (end -5.70 -2.72) (layer F.Fab) (width 0.06))
 	(fp_circle (center 3.20 -2.35) (end 3.35 -2.35) (layer Cmts.User) (width 0.30))
-	(model "/Users/evanthayer/Projects/flipdots/hardware/devices/symbols/LCSC.3dshapes/USB-C-SMD_12P-W8.9-W6.5-H3.2.wrl"
+	(model "${KICAD9_3DMODEL_DIR}/USB-C-SMD_12P-W8.9-W6.5-H3.2.step"
 		(offset (xyz 0.000 -0.900 1.400))
 		(scale (xyz 1 1 1))
 		(rotate (xyz 0 0 180))

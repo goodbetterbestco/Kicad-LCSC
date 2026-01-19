@@ -27,7 +27,7 @@
 	(pad 4 smd rect (at -1.60 2.30 -90.00) (size 1.30 1.00) (layers F.Cu F.Paste F.Mask))
 	(fp_circle (center 2.50 -2.70) (end 2.53 -2.70) (layer F.Fab) (width 0.06))
 	(fp_circle (center 0.00 -0.00) (end 1.09 -0.00) (layer F.SilkS) (width 0.25))
-	(model "/Users/evanthayer/Projects/flipdots/hardware/devices/symbols/LCSC.3dshapes/LED-ARRAY-SMD_6P-L5.0-W5.0-P1.60-LS5.3-TR.wrl"
+	(model "${KICAD9_3DMODEL_DIR}/LED-ARRAY-SMD_6P-L5.0-W5.0-P1.60-LS5.3-TR.step"
 		(offset (xyz 0.000 -0.000 -0.000))
 		(scale (xyz 1 1 1))
 		(rotate (xyz 0 0 0))

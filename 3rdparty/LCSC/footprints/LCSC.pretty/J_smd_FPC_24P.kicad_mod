@@ -45,7 +45,7 @@
 	(fp_circle (center -6.33 -1.65) (end -6.20 -1.65) (layer F.SilkS) (width 0.25))
 	(fp_circle (center -8.20 -1.48) (end -8.17 -1.48) (layer F.Fab) (width 0.06))
 	(fp_circle (center -5.82 -1.87) (end -5.62 -1.87) (layer Cmts.User) (width 0.40))
-	(model "/Users/evanthayer/Projects/flipdots/hardware/devices/symbols/LCSC.3dshapes/FPC-SMD_24P-P0.50_FPC-05F-24PH20.wrl"
+	(model "${KICAD9_3DMODEL_DIR}/FPC-SMD_24P-P0.50_FPC-05F-24PH20.step"
 		(offset (xyz -0.000 -1.200 -0.000))
 		(scale (xyz 1 1 1))
 		(rotate (xyz 0 0 0))

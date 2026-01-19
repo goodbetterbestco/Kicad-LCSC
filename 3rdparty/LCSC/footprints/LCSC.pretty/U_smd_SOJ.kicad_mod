@@ -26,7 +26,7 @@
 	(fp_circle (center -4.20 1.90) (end -4.17 1.90) (layer F.Fab) (width 0.06))
 	(fp_circle (center -3.94 2.54) (end -3.69 2.54) (layer F.SilkS) (width 0.25))
 	(fp_circle (center -2.79 2.16) (end -2.54 2.16) (layer Cmts.User) (width 0.50))
-	(model "/Users/evanthayer/Projects/flipdots/hardware/devices/symbols/LCSC.3dshapes/SOJ-4_L8.4-W3.8-P5.5-BL.wrl"
+	(model "${KICAD9_3DMODEL_DIR}/SOJ-4_L8.4-W3.8-P5.5-BL.step"
 		(offset (xyz 0.000 -0.000 -0.000))
 		(scale (xyz 1 1 1))
 		(rotate (xyz 0 0 0))

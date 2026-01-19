@@ -57,7 +57,7 @@
 	(fp_circle (center -1.53 -1.90) (end -1.50 -1.90) (layer F.Fab) (width 0.06))
 	(fp_circle (center -1.84 -0.95) (end -1.72 -0.95) (layer Cmts.User) (width 0.25))
 	(fp_circle (center -2.14 -0.95) (end -2.00 -0.95) (layer F.SilkS) (width 0.10))
-	(model "/Users/evanthayer/Projects/flipdots/hardware/devices/symbols/LCSC.3dshapes/QFN-20_L5.0-W3.0-TL-MPM3630GQV-Z.wrl"
+	(model "${KICAD9_3DMODEL_DIR}/QFN-20_L5.0-W3.0-TL-MPM3630GQV-Z.step"
 		(offset (xyz 0.000 -0.600 0.000))
 		(scale (xyz 1 1 1))
 		(rotate (xyz 0 0 0))

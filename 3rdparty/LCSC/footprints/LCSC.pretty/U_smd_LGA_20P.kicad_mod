@@ -40,7 +40,7 @@
 	(fp_circle (center -1.78 1.52) (end -1.67 1.52) (layer Cmts.User) (width 0.25))
 	(fp_circle (center -2.03 2.16) (end -1.92 2.16) (layer F.SilkS) (width 0.25))
 	(fp_circle (center -1.52 2.25) (end -1.49 2.25) (layer F.Fab) (width 0.06))
-	(model "/Users/evanthayer/Projects/flipdots/hardware/devices/symbols/LCSC.3dshapes/LGA-20_L3.0-W4.5-H1.0-P0.50.wrl"
+	(model "${KICAD9_3DMODEL_DIR}/LGA-20_L3.0-W4.5-H1.0-P0.50.step"
 		(offset (xyz 0.000 0.000 -0.000))
 		(scale (xyz 1 1 1))
 		(rotate (xyz 0 0 180))

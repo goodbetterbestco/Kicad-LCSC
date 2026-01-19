@@ -51,7 +51,7 @@
 	(fp_arc (start -2.82 4.86) (end -2.96 4.82) (angle -209.67) (layer Cmts.User) (width 0.25))
 	(fp_arc (start -3.76 4.21) (end -3.75 4.06) (angle 356.18) (layer F.SilkS) (width 0.30))
 	(fp_arc (start -2.21 2.00) (end -2.21 2.00) (angle -359.00) (layer F.SilkS) (width 0.40))
-	(model "/Users/evanthayer/Projects/flipdots/hardware/devices/symbols/LCSC.3dshapes/TQFP-32_L7.0-W7.0-H1.2-LS9.0-P0.80.wrl"
+	(model "${KICAD9_3DMODEL_DIR}/TQFP-32_L7.0-W7.0-H1.2-LS9.0-P0.80.step"
 		(offset (xyz -0.000 0.000 -0.000))
 		(scale (xyz 1 1 1))
 		(rotate (xyz 0 0 270))

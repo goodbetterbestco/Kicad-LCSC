@@ -17,7 +17,7 @@
 	(pad 1 smd rect (at -1.53 0.00 180.00) (size 1.53 1.30) (layers F.Cu F.Paste F.Mask))
 	(pad 2 smd rect (at 1.53 0.00 180.00) (size 1.53 1.30) (layers F.Cu F.Paste F.Mask))
 	(fp_circle (center -1.83 -0.80) (end -1.80 -0.80) (layer F.Fab) (width 0.06))
-	(model "/Users/evanthayer/Projects/flipdots/hardware/devices/symbols/LCSC.3dshapes/CASE-A_L3.2-W1.6-H1.6.wrl"
+	(model "${KICAD9_3DMODEL_DIR}/CASE-A_L3.2-W1.6-H1.6.step"
 		(offset (xyz 0.000 -0.000 -0.000))
 		(scale (xyz 1 1 1))
 		(rotate (xyz 0 0 0))

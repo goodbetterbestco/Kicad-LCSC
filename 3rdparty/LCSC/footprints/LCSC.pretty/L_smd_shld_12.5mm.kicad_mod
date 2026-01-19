@@ -30,7 +30,7 @@
 	(fp_arc (start 3.52 -4.51) (end 2.30 -4.98) (angle 220.38) (layer F.SilkS) (width 0.25))
 	(fp_arc (start 3.70 4.25) (end 2.48 4.72) (angle -220.38) (layer F.SilkS) (width 0.25))
 	(fp_arc (start -3.72 4.31) (end -2.50 4.78) (angle 220.38) (layer F.SilkS) (width 0.25))
-	(model "/Users/evanthayer/Projects/flipdots/hardware/devices/symbols/LCSC.3dshapes/IND-SMD_4P-L12.5-W12.5-H6.0_PF055X.XXXNL.wrl"
+	(model "${KICAD9_3DMODEL_DIR}/IND-SMD_4P-L12.5-W12.5-H6.0_PF055X.XXXNL.step"
 		(offset (xyz 0.000 0.000 -0.000))
 		(scale (xyz 1 1 1))
 		(rotate (xyz 0 0 0))

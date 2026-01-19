@@ -23,7 +23,7 @@
 	(fp_circle (center 0.00 0.00) (end 1.61 0.00) (layer F.SilkS) (width 0.25))
 	(fp_circle (center -4.10 -3.50) (end -3.88 -3.50) (layer F.SilkS) (width 0.25))
 	(fp_circle (center -4.40 -2.30) (end -4.20 -2.30) (layer Cmts.User) (width 0.40))
-	(model "/Users/evanthayer/Projects/flipdots/hardware/devices/symbols/LCSC.3dshapes/SW-SMD_4P-L6.2-W6.2-H7.4-P4.50-LS9.0_DTSMG.wrl"
+	(model "${KICAD9_3DMODEL_DIR}/SW-SMD_4P-L6.2-W6.2-H7.4-P4.50-LS9.0_DTSMG.step"
 		(offset (xyz 0.000 0.000 -0.000))
 		(scale (xyz 1 1 1))
 		(rotate (xyz 0 0 0))

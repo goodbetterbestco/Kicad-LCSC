@@ -36,7 +36,7 @@
 	(fp_circle (center -5.38 2.62) (end -5.08 2.62) (layer Cmts.User) (width 0.60))
 	(fp_arc (start -4.06 0.86) (end -4.06 0.86) (angle -359.00) (layer F.SilkS) (width 0.40))
 	(fp_arc (start -4.97 0.00) (end -4.97 -0.62) (angle 180.00) (layer F.SilkS) (width 0.25))
-	(model "/Users/evanthayer/Projects/flipdots/hardware/devices/symbols/LCSC.3dshapes/SOIC-16_L10.3-W4.5-H2.1-LS6.8-P1.27.wrl"
+	(model "${KICAD9_3DMODEL_DIR}/SOIC-16_L10.3-W4.5-H2.1-LS6.8-P1.27.step"
 		(offset (xyz 0.000 -0.000 -0.000))
 		(scale (xyz 1 1 1))
 		(rotate (xyz 0 0 0))

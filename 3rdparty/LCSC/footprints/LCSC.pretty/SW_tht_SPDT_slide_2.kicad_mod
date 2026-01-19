@@ -17,7 +17,7 @@
 	(pad 2 thru_hole oval (at 0.00 0.00 0.00) (size 2.00 3.00) (layers *.Cu *.Mask)(drill oval 1.3000228 1.9999959999999999))
 	(pad 3 thru_hole oval (at 4.70 0.00 0.00) (size 2.00 3.00) (layers *.Cu *.Mask)(drill oval 1.3000228 1.9999959999999999))
 	(fp_circle (center -6.48 3.48) (end -6.45 3.48) (layer F.Fab) (width 0.06))
-	(model "/Users/evanthayer/Projects/flipdots/hardware/devices/symbols/LCSC.3dshapes/SW-TH_L13.0-W6.8-H6.4-P4.7.wrl"
+	(model "${KICAD9_3DMODEL_DIR}/SW-TH_L13.0-W6.8-H6.4-P4.7.step"
 		(offset (xyz 0.000 -0.000 0.000))
 		(scale (xyz 1 1 1))
 		(rotate (xyz 0 0 0))

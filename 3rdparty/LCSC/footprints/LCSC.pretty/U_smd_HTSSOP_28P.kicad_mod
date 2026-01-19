@@ -54,7 +54,7 @@
 	(fp_circle (center -4.23 3.60) (end -4.08 3.60) (layer Cmts.User) (width 0.30))
 	(fp_circle (center -4.23 1.02) (end -4.08 1.02) (layer F.SilkS) (width 0.30))
 	(fp_circle (center -4.85 2.87) (end -4.70 2.87) (layer F.SilkS) (width 0.30))
-	(model "/Users/evanthayer/Projects/flipdots/hardware/devices/symbols/LCSC.3dshapes/HTSSOP-28_L9.7-W4.4-H1.2-LS6.4-P0.65.wrl"
+	(model "${KICAD9_3DMODEL_DIR}/HTSSOP-28_L9.7-W4.4-H1.2-LS6.4-P0.65.step"
 		(offset (xyz 0.000 0.000 -0.000))
 		(scale (xyz 1 1 1))
 		(rotate (xyz 0 0 270))

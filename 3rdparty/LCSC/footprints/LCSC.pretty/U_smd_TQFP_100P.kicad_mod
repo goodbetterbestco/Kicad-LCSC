@@ -125,7 +125,7 @@
 	(fp_circle (center -6.17 6.17) (end -6.02 6.17) (layer F.SilkS) (width 0.30))
 	(fp_circle (center -8.00 8.00) (end -7.97 8.00) (layer F.Fab) (width 0.06))
 	(fp_circle (center -6.22 7.75) (end -5.97 7.75) (layer Cmts.User) (width 0.50))
-	(model "/Users/evanthayer/Projects/flipdots/hardware/devices/symbols/LCSC.3dshapes/TQFP-100_L14.0-W14.0-H1.2-LS16.0-P0.50.wrl"
+	(model "${KICAD9_3DMODEL_DIR}/TQFP-100_L14.0-W14.0-H1.2-LS16.0-P0.50.step"
 		(offset (xyz -890.900 868.810 -0.000))
 		(scale (xyz 1 1 1))
 		(rotate (xyz 0 0 270))

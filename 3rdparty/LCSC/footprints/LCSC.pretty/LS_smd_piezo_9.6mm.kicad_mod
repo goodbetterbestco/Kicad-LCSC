@@ -26,7 +26,7 @@
 	(fp_text user - (at -3.36 -3.08 0.00) (layer F.SilkS)
 		(effects (font (size 2.03 2.03) (thickness 0.20)) (justify left))
 	)
-	(model "/Users/evanthayer/Projects/flipdots/hardware/devices/symbols/LCSC.3dshapes/BUZ-SMD_L9.6-W9.6-H5.0.wrl"
+	(model "${KICAD9_3DMODEL_DIR}/BUZ-SMD_L9.6-W9.6-H5.0.step"
 		(offset (xyz 0.000 -0.000 -0.000))
 		(scale (xyz 1 1 1))
 		(rotate (xyz 0 0 90))

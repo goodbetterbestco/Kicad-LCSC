@@ -80,7 +80,7 @@
 	(fp_circle (center 15.24 -1.27) (end 15.47 -1.27) (layer F.Fab) (width 0.45))
 	(fp_circle (center 17.78 1.27) (end 18.01 1.27) (layer F.Fab) (width 0.45))
 	(fp_circle (center 17.78 -1.27) (end 18.01 -1.27) (layer F.Fab) (width 0.45))
-	(model "/Users/evanthayer/Projects/flipdots/hardware/devices/symbols/LCSC.3dshapes/IDC-TH_30P-P2.54_300R-30P.wrl"
+	(model "${KICAD9_3DMODEL_DIR}/IDC-TH_30P-P2.54_300R-30P.step"
 		(offset (xyz 0.000 -5.130 0.000))
 		(scale (xyz 1 1 1))
 		(rotate (xyz 0 0 180))
