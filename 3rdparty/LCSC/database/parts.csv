@@ -1,0 +1,231 @@
+LCSC,Reference,Value,MPN,Manufacturer,Symbol,Footprint,Description,Keywords,Datasheet,Type
+C5656610,MK,ICS-43434,ICS-43434,TDK InvenSense,LCSC:ICS-43434_C5656610,LCSC:MK_smd_MEMS,MEMS Microphone I2S Digital,audio mems microphone smd sound,https://invensense.tdk.com/wp-content/uploads/2016/02/DS-000069-ICS-43434-v1.2.pdf,Active
+C109431,Q,MMBT9013,MMBT9013G,Changjiang,LCSC:MMBT9013G,LCSC:Q_smd_SOT23_3,NPN Transistor 500mA 40V,40v bjt npn smd sot23 transistor,https://datasheet.lcsc.com/lcsc/1811142026_Changjiang-Electronics-Tech--CJ-MMBT9013G_C109431.pdf,Active
+C20526,Q,MMBT3904-C20526,MMBT3904-C20526,Changjiang,LCSC:MMBT3904-C20526,LCSC:Q_smd_SOT23_1,NPN Transistor 200mA 40V,40v bjt npn smd sot23 transistor,https://datasheet.lcsc.com/lcsc/1811081733_Changjiang-Electronics-Tech--CJ-MMBT3904-C20526_C20526.pdf,Active
+C96616,Q,DMG3415U,DMG3415U-7,Diodes Inc,LCSC:DMG3415U-7,LCSC:Q_smd_SOT23_2,P-Channel MOSFET -4A 20V,20v fet mosfet p-channel pfet pmos smd sot23 transistor,https://datasheet.lcsc.com/lcsc/1811061715_Diodes-Incorporated-DMG3415U-7_C96616.pdf,Active
+C130085,U,TS3USB221,TS3USB221RSER,TI,LCSC:TS3USB221RSER,LCSC:U_smd_QFN_10P,USB 2.0 Mux Switch,chip ic interface qfn smd usb,https://www.ti.com/lit/ds/symlink/ts3usb221.pdf,Active
+C131941,U,TPS22918,TPS22918DBVR,TI,LCSC:TPS22918DBVR,LCSC:Q_smd_SOT236_2,Load Switch 2A 5.5V,5.5v chip ic load power smd sot23 switch,https://www.ti.com/lit/ds/symlink/tps22918.pdf,Active
+C132230,U,ATMEGA328PB-AU,ATMEGA328PB-AU,Microchip,LCSC:ATMEGA328PB-AU,LCSC:U_smd_TQFP_32P,AVR MCU 32KB Flash,arduino atmega avr chip flash ic mcu memory microcontroller processor qfp smd storage,https://ww1.microchip.com/downloads/en/DeviceDoc/40001906C.pdf,Active
+C132827,U,LD39050PU33,LD39050PU33R,ST,LCSC:LD39050PU33R,LCSC:U_smd_DFN_6P_2,LDO Regulator 3.3V 500mA,3.3v chip ic ldo linear power regulator smd,https://datasheet.lcsc.com/lcsc/1810010213_STMicroelectronics-LD39050PU33R_C132827.pdf,Active
+C134077,U,LD1117S50,LD1117S50TR,ST,LCSC:LD1117S50TR,LCSC:Q_smd_SOT223_1,LDO Regulator 5V 800mA,5v chip ic ldo linear power regulator smd,https://datasheet.lcsc.com/lcsc/1809191114_STMicroelectronics-LD1117S50TR_C134077.pdf,Active
+C146580,U,ICS-16P,ICS-16P,SHOU HAN,LCSC:ICS-16P,LCSC:U_tht_DIP_16P,16-Pin DIP IC Socket,chip ic through-hole tht,https://datasheet.lcsc.com/lcsc/2012091836_SHOU-HAN-ICS-16P_C146580.pdf,Active
+C148206,U,"74HC4017D,653","74HC4017D,653",NXP,"LCSC:74HC4017D,653",LCSC:U_smd_SOIC_16P_1,Decade Counter/Divider,chip counter divider ic logic smd soic,https://datasheet.lcsc.com/lcsc/1809191523_Nexperia-74HC4017D-653_C148206.pdf,Active
+C14879,U,MCP73831T-2ATI_O,MCP73831T-2ATI_OT,Microchip,LCSC:MCP73831T-2ATI_OT,LCSC:Q_smd_SOT235_3,Li-Ion Charger 500mA,battery charger chip ic lipo lithium power smd sot23,https://ww1.microchip.com/downloads/en/DeviceDoc/MCP73831-Family-Data-Sheet-DS20001984H.pdf,Active
+C15127,U,AO3401A,AO3401A,Alpha & Omega,LCSC:AO3401A,LCSC:Q_smd_SOT23_5,P-Channel MOSFET -4A 30V,30v chip fet ic mosfet p-channel pfet pmos smd sot23 transistor,https://www.aosmd.com/res/data_sheets/AO3401A.pdf,Active
+C161843,U,NCE0102,NCE0102,NCE Power,LCSC:NCE0102,LCSC:Q_smd_SOT23_5,N-Channel MOSFET 1.8A 20V,20v chip fet ic mosfet n-channel nfet nmos smd sot23 transistor,https://datasheet.lcsc.com/lcsc/1811021710_NCE-Power-Semiconductor-NCE0102_C161843.pdf,Active
+C16581,U,TP4056,TP4056,TOPPOWER,LCSC:TP4056,LCSC:U_smd_ESOP_8P,Li-Ion Charger 1A,battery charger chip ic lipo lithium power smd,https://dlnmh9ip6v2uc.cloudfront.net/datasheets/Prototyping/TP4056.pdf,Active
+C191206,U,IS31FL3731-QFLS2,IS31FL3731-QFLS2-TR,ISSI,LCSC:IS31FL3731-QFLS2-TR,LCSC:U_smd_QFN_28P,LED Matrix Driver I2C 144-LED,chip i2c ic iic qfn serial smd twi,https://www.lumissil.com/assets/pdf/core/IS31FL3731_DS.pdf,Active
+C194472,U,LM2576S-5.0,LM2576S-5.0_TR,HGSEMI,LCSC:LM2576S-5.0_TR,LCSC:Q_smd_TO263_5P,Step-Down Regulator 5V 3A,5v buck chip dcdc ic power regulator smd step-down switching,https://www.ti.com/lit/ds/symlink/lm2576.pdf,Active
+C19738,U,MAX485,MAX485ESA+T,Maxim,LCSC:MAX485ESA+T,LCSC:U_smd_SOIC_8P,RS-485 Transceiver Half-Duplex,bus chip differential ic rs485 serial smd soic transceiver,https://datasheet.lcsc.com/lcsc/1809301713_Maxim-Integrated-MAX485ESA-T_C19738.pdf,Active
+C1985642,U,ABS25-32.768KHZ-6,ABS25-32.768KHZ-6-T,Abracon,LCSC:ABS25-32.768KHZ-6-T,LCSC:U_smd_SOJ,32.768kHz Crystal 6pF,chip clock crystal ic oscillator smd xtal,https://datasheet.lcsc.com/lcsc/2001081204_Abracon-LLC-ABS25-32-768KHZ-6-T_C1985642.pdf,Active
+C202199,U,TLC5952DAP,TLC5952DAP,TI,LCSC:TLC5952DAP,LCSC:U_smd_HTSSOP_32P,LED Driver 24ch Constant Current,chip driver ic led lighting pwm smd,https://www.ti.com/lit/ds/symlink/tlc5952.pdf,Active
+C22460,U,ATMEGA2560-16AU,ATMEGA2560-16AU,Microchip,LCSC:ATMEGA2560-16AU,LCSC:U_smd_TQFP_100P,AVR MCU 256KB Flash,arduino atmega avr chip flash ic mcu memory microcontroller processor qfp smd storage,https://ww1.microchip.com/downloads/en/devicedoc/atmel-2549-8-bit-avr-microcontroller-atmega640-1280-1281-2560-2561_datasheet.pdf,Active
+C23922,U,STM32F030C8T6,STM32F030C8T6,ST,LCSC:STM32F030C8T6,LCSC:U_smd_LQFP_48P,ARM Cortex-M0 MCU 64KB,arm chip cortex ic mcu microcontroller processor qfp smd,https://datasheet.lcsc.com/lcsc/1810010411_STMicroelectronics-STM32F030C8T6_C23922.pdf,Active
+C255327,U,GSD9605YB-3V2800,GSD9605YB-3V2800,INGHAi,Device:Buzzer,LCSC:LS_smd_piezo_9.6mm,Piezo Buzzer 3V 2800Hz,3v alert audio buzzer chip ic piezo smd sound,https://datasheet.lcsc.com/lcsc/2203091830_INGHAi-GSD9605YB-3V2800_C255327.pdf,Active
+C2678753,U,"PCA9685PW,118","PCA9685PW,118",NXP,"LCSC:PCA9685PW,118",LCSC:U_smd_TSSOP_28P,PWM Driver 16ch I2C,chip driver i2c ic iic pwm serial smd twi,https://www.nxp.com/docs/en/data-sheet/PCA9685.pdf,Active
+C2827693,U,USBLC6-2P6,USBLC6-2P6,TECH PUBLIC,LCSC:USBLC6-2P6_C2827693,LCSC:U_smd_SOT666_6P,USB ESD Protection TVS,battery chip esd ic interface protection safety smd surge tvs usb,https://datasheet.lcsc.com/lcsc/2202131930_TECH-PUBLIC-USBLC6-2P6_C2827693.pdf,Active
+C2838502,U,ESP32-C3-MINI-1-N4,ESP32-C3-MINI-1-N4,Espressif,LCSC:ESP32-C3-MINI-1-N4,LCSC:U_smd_module_ESP32C3,WiFi+BLE MCU Module 4MB Flash,802.11 chip flash ic mcu memory microcontroller processor smd storage wifi wireless,https://datasheet.lcsc.com/lcsc/2108132230_Espressif-Systems-ESP32-C3-MINI-1-N4_C2838502.pdf,Active
+C2874704,U,FDMA905P,FDMA905P,JSMSEMI,LCSC:FDMA905P_C2874704,LCSC:U_smd_DFN_6P_1,Dual P-Channel MOSFET -6A 20V,20v chip fet ic mosfet p-channel pfet pmos smd transistor,https://datasheet.lcsc.com/lcsc/2108132230_JSMSEMI-FDMA905P_C2874704.pdf,Active
+C2913202,U,ESP32-S3-WROOM-1,ESP32-S3-WROOM-1(N16R8),Espressif,LCSC:ESP32-S3-WROOM-1(N16R8),LCSC:U_smd_module_ESP32S3,WiFi+BLE MCU 16MB Flash 8MB PSRAM,802.11 chip flash ic mcu memory microcontroller processor smd storage wifi wireless,https://datasheet.lcsc.com/lcsc/2109061630_Espressif-Systems-ESP32-S3-WROOM-1-N16R8_C2913202.pdf,Active
+C2977777,U,CH340N,CH340N,WCH,LCSC:CH340N_C2977777,LCSC:U_smd_SOP_8P_1,USB-UART Bridge,chip ic interface serial smd uart usb,https://datasheet.lcsc.com/lcsc/2108132230_WCH-Jiangsu-Qin-Heng-CH340N_C2977777.pdf,Active
+C32254,U,FS8205,FS8205,Fortune,LCSC:FS8205,LCSC:Q_smd_SOT236_2,Dual N-Channel MOSFET 6A 20V,20v chip fet ic mosfet n-channel nfet nmos smd sot23 transistor,https://datasheet.lcsc.com/lcsc/1810161512_Fortune-Semicon-FS8205_C32254.pdf,Active
+C347373,U,XC6206P182MR,XC6206P182MR,UMW,LCSC:XC6206P182MR_C347373,LCSC:Q_smd_SOT23_4,LDO Regulator 1.8V 200mA,1.8v chip ic ldo linear power regulator smd sot23,https://datasheet.lcsc.com/lcsc/1912111437_UMW-Youtai-Semiconductor-Co---Ltd--XC6206P182MR_C347373.pdf,Active
+C397224,U,G6B-1114P-USDC5,G6B-1114P-USDC5,Omron,LCSC:G6B-1114P-USDC5,LCSC:K_tht_relay,Relay SPST-NO 5VDC 5A,chip ic mechanical relay switch through-hole tht,https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6b.pdf,Active
+C42411897,U,RTL8189FTV,E103-RTL8189FTV,EBYTE,LCSC:E103-RTL8189FTV_C42411897,LCSC:U_smd_module_RTL8189,WiFi Module SDIO 802.11b/g/n,802.11 chip ic smd wifi wireless,https://datasheet.lcsc.com/lcsc/2306191642_EBYTE-E103-RTL8189FTV_C42411897.pdf,Active
+C46046,U,STM32F072RBT6,STM32F072RBT6,ST,LCSC:STM32F072RBT6,LCSC:U_smd_LQFP_64P,ARM Cortex-M0 MCU 128KB USB,arm chip cortex ic interface mcu microcontroller processor qfp smd usb,https://datasheet.lcsc.com/lcsc/1809191115_STMicroelectronics-STM32F072RBT6_C46046.pdf,Active
+C46243,U,LD3985M33R,LD3985M33R,ST,LCSC:LD3985M33R,LCSC:Q_smd_SOT235_3,LDO Regulator 3.3V 150mA,3.3v chip ic ldo linear power regulator smd sot23,https://datasheet.lcsc.com/lcsc/1811081927_STMicroelectronics-LD3985M33R_C46243.pdf,Active
+C469860,U,TPS62821,TPS62821DLCR,TI,LCSC:TPS62821DLCR,LCSC:U_smd_VSON_8P,Step-Down Regulator 1A Adjustable,buck chip dcdc ic power regulator smd step-down switching,https://www.ti.com/lit/ds/symlink/tps62821.pdf,Active
+C51118,U,AP2112K-3.3,AP2112K-3.3TRG1,Diodes Inc,LCSC:AP2112K-3.3TRG1,LCSC:U_smd_SOT25_5P,LDO Regulator 3.3V 600mA,3.3v chip ic ldo linear power regulator smd,https://www.diodes.com/assets/Datasheets/AP2112.pdf,Active
+C5156572,U,MT3520B,MT3520B,Aerosemi,LCSC:MT3520B_C5156572,LCSC:Q_smd_SOT235_1,Li-Ion Charger 800mA,battery charger chip ic lipo lithium power smd sot23,https://datasheet.lcsc.com/lcsc/2110151630_Aerosemi-Tech-MT3520B_C5156572.pdf,Active
+C5173872,U,MPM3610A,MPM3610AGQV-Z,MPS,LCSC:MPM3610AGQV-Z,LCSC:U_smd_QFN_20P,Step-Down Module 1.2A,buck chip dcdc ic power qfn regulator smd step-down switching,https://datasheet.lcsc.com/lcsc/2202251600_Monolithic-Power-Systems-MPS-MPM3610AGQV-Z_C5173872.pdf,Active
+C5328706,U,RV1106G3,RV1106G3,Rockchip,LCSC:RV1106G3,LCSC:U_smd_QFN_128P,RISC-V Camera SoC NPU,chip ic qfn risc-v riscv smd,https://datasheet.lcsc.com/lcsc/2209191800_Rockchip-Elec-RV1106G3_C5328706.pdf,Active
+C5947,U,74HC595,"74HC595D,118",NXP,"LCSC:74HC595D,118",LCSC:U_smd_SOIC_16P_2,Shift Register 8-bit,chip ic logic parallel register serial shift smd soic,https://www.ti.com/lit/ds/symlink/sn74hc595.pdf,Active
+C6186,U,AMS1117-3.3,AMS1117-3.3,Advanced Monolithic Systems,LCSC:AMS1117-3.3,LCSC:Q_smd_SOT223_1,LDO Regulator 3.3V 1A,3.3v chip ic ldo linear power regulator smd,http://www.advanced-monolithic.com/pdf/ds1117.pdf,Active
+C6187,U,AMS1117-5.0,AMS1117-5.0,Advanced Monolithic Systems,LCSC:AMS1117-5.0,LCSC:Q_smd_SOT223_2,LDO Regulator 5V 1A,5v chip ic ldo linear power regulator smd,http://www.advanced-monolithic.com/pdf/ds1117.pdf,Active
+C693250,U,FDS4435A,FDS4435A,VBsemi,LCSC:FDS4435A,LCSC:U_smd_SOP_8P_2,P-Channel MOSFET -8.8A 30V,30v chip fet ic mosfet p-channel pfet pmos smd transistor,https://datasheet.lcsc.com/lcsc/2007211834_VBsemi-Elec-FDS4435A_C693250.pdf,Active
+C7094,U,TPIC6B595,TPIC6B595DWR,TI,LCSC:TPIC6B595DWR,LCSC:U_smd_SOIC_20P,Power Shift Register 8-bit 150mA,chip ic logic parallel register serial shift smd soic,https://www.ti.com/lit/ds/symlink/tpic6b595.pdf,Active
+C7436029,U,ETA5050,ETA5050V0S2F,etasolution,LCSC:ETA5050V0S2F,LCSC:Q_smd_SOT235_2,USB Power Switch 1.5A,chip ic interface smd sot23 usb,https://datasheet.lcsc.com/lcsc/2211041500_etasolution-ETA5050V0S2F_C7436029.pdf,Active
+C7469,U,SN74AHC1G14,SN74AHC1G14DBVR,TI,LCSC:SN74AHC1G14DBVR,LCSC:Q_smd_SOT235_3,Schmitt Trigger Inverter,buffer chip gate ic inverter logic not schmitt smd sot23 trigger,https://www.ti.com/lit/ds/symlink/sn74ahc1g14.pdf,Active
+C80488,U,STM32F072C8T6,STM32F072C8T6,ST,LCSC:STM32F072C8T6,LCSC:U_smd_LQFP_48P,ARM Cortex-M0 MCU 64KB USB,arm chip cortex ic interface mcu microcontroller processor qfp smd usb,https://datasheet.lcsc.com/lcsc/1811081735_STMicroelectronics-STM32F072C8T6_C80488.pdf,Active
+C82736,U,FS312F-G,FS312F-G,Fortune,LCSC:FS312F-G,LCSC:Q_smd_SOT236_2,Li-Ion Protection IC 1-Cell,battery chip ic protection safety smd sot23,https://datasheet.lcsc.com/lcsc/1809192027_Fortune-Semicon-FS312F-G_C82736.pdf,Active
+C8304,U,STM32F103CBT6,STM32F103CBT6,ST,LCSC:STM32F103CBT6,LCSC:U_smd_LQFP_48P,ARM Cortex-M3 MCU 128KB,arm chip cortex ic mcu microcontroller processor qfp smd,https://datasheet.lcsc.com/lcsc/1810010209_STMicroelectronics-STM32F103CBT6_C8304.pdf,Active
+C84817,U,MT3608,MT3608,Aerosemi,LCSC:MT3608,LCSC:Q_smd_SOT236_1,Boost Converter 24V 2A,24v boost chip dcdc ic power smd sot23 step-up switching,https://www.olimex.com/Products/Breadboarding/BB-PWR-3608/resources/MT3608.pdf,Active
+C88868,U,W25N01GVZEIG,W25N01GVZEIG,Winbond,LCSC:W25N01GVZEIG,LCSC:U_smd_WSON_8P,SPI NAND Flash 1Gbit,chip flash ic memory nand serial smd spi storage,https://datasheet.lcsc.com/lcsc/1811141117_Winbond-Elec-W25N01GVZEIG_C88868.pdf,Active
+C919459,U,TPS61023,TPS61023DRLR,TI,LCSC:TPS61023DRLR,LCSC:U_smd_SOT563_6P,Boost Converter 5.5V 3A,5.5v boost chip dcdc ic power smd step-up switching,https://www.ti.com/lit/ds/symlink/tps61023.pdf,Active
+C92482,U,DRV8313,DRV8313PWPR,TI,LCSC:DRV8313PWPR,LCSC:U_smd_HTSSOP_28P,BLDC Motor Driver 3-Phase 2.5A,bldc chip driver hbridge ic motor smd stepper,https://www.ti.com/lit/ds/symlink/drv8313.pdf,Active
+C94022,U,BMX055,BMX055,Bosch,LCSC:BMX055,LCSC:U_smd_LGA_20P,9-Axis IMU Accel/Gyro/Mag,accelerometer chip gyroscope ic imu magnetometer motion sensor smd,https://datasheet.lcsc.com/lcsc/1810181629_Bosch-Sensortec-BMX055_C94022.pdf,Active
+C95414,U,LP2985-33,LP2985-33DBVR,TI,LCSC:LP2985-33DBVR,LCSC:Q_smd_SOT235_1,LDO Regulator 3.3V 150mA,3.3v chip ic ldo linear power regulator smd sot23,https://www.ti.com/lit/ds/symlink/lp2985.pdf,Active
+C9683,U,ULN2803A,ULN2803ADWR,TI,LCSC:ULN2803ADWR,LCSC:U_smd_SOIC_18P,Darlington Array 8ch 500mA,array chip darlington driver ic smd soic,https://datasheet.lcsc.com/lcsc/1809192026_Texas-Instruments-ULN2803ADWR_C9683.pdf,Active
+C70377,BT,CR2032,CR2032-BS-6-1,MYOUNG,Device:Battery,LCSC:BT_tht_CR2032_2,CR2032 Holder SMD,battery cell holder through-hole tht,,Passive
+C70379,BT,CR2032,CR2032-BS-5-1,MYOUNG,Device:Battery,LCSC:BT_tht_CR2032_1,CR2032 Holder THT,battery cell holder through-hole tht,,Passive
+C106203,C,22pF,CC0402JRNPO9BN220,Yageo,Device:C,LCSC:C_smd_cer_0402,0402 50V ±10%,0402 50v cap capacitor picofarad smd,,Passive
+C107000,C,20pF,CC0402JRNPO9BN200,Yageo,Device:C,LCSC:C_smd_cer_0402,0402 50V ±10%,0402 50v cap capacitor picofarad smd,,Passive
+C107183,C,2.2µF,CC1206KKX7R7BB225,Yageo,Device:C,LCSC:C_smd_cer_1206,1206 50V X7R ±10%,1206 50v cap capacitor microfarad smd,,Passive
+C12530,C,2.2µF,CL05A225MQ5NSNC,Samsung,Device:C,LCSC:C_smd_cer_0402,0402 6.3V ±10%,0402 6.3v cap capacitor microfarad smd,,Passive
+C12674,C,8MHz,X49SM8MSD2SC,YXC,Device:Crystal,LCSC:Y_smd_xtal_1148,[Y] 3.2x2.5mm ±10ppm -40~85°C Crystal,cap capacitor clock crystal oscillator smd xtal,,Passive
+C12891,C,22µF,CL31A226KAHNNNE,Samsung,Device:C,LCSC:C_smd_cer_1206,1206 25V ±10%,1206 25v cap capacitor microfarad smd,,Passive
+C14663,C,100nF,CC0603KRX7R9BB104,Yageo,Device:C,LCSC:C_smd_cer_0603,0603 X7R ±10%,0603 cap capacitor nanofarad smd,,Passive
+C15195,C,10nF,CL05B103KB5NNNC,Samsung,Device:C,LCSC:C_smd_cer_0402,0402 ±10%,0402 cap capacitor nanofarad smd,,Passive
+C1525,C,100nF,CL05B104KO5NNNC,Samsung,Device:C,LCSC:C_smd_cer_0402,0402 16V ±10%,0402 16v cap capacitor nanofarad smd,,Passive
+C15525,C,10µF,CL05A106MQ5NUNC,Samsung,Device:C,LCSC:C_smd_cer_0402,0402 6.3V X5R ±10%,0402 6.3v cap capacitor microfarad smd,,Passive
+C1554,C,20pF,0402CG200J500NT,Fenghua,Device:C,LCSC:C_smd_cer_0402,0402 50V C0G ±5%,0402 50v cap capacitor picofarad smd,,Passive
+C1555,C,22pF,0402CG220J500NT,Fenghua,Device:C,LCSC:C_smd_cer_0402,0402 50V C0G ±5%,0402 50v cap capacitor picofarad smd,,Passive
+C15849,C,1µF,CL10A105KB8NNNC,Samsung,Device:C,LCSC:C_smd_cer_0603,0603 X5R ±10%,0603 cap capacitor microfarad smd,,Passive
+C15850,C,10µF,CL21A106KAYNNNE,Samsung,Device:C,LCSC:C_smd_cer_0805,0805 X5R ±10%,0805 cap capacitor microfarad smd,,Passive
+C1653,C,22pF,CL10C220JB8NNNC,Samsung,Device:C,LCSC:C_smd_cer_0603,0603 ±10%,0603 cap capacitor picofarad smd,,Passive
+C165974,C,100µF,EEEFTH101XAP,Panasonic,Device:C,LCSC:C_smd_elec_6.3mm_1,6.3x5.8mm 50V Electrolytic ±20%,50v cap capacitor elec electrolytic microfarad smd,,Passive
+C178621,C,100µF,EEEHD1V100AR,Panasonic,Device:C,LCSC:C_smd_elec_5.0mm,5.0x5.4mm 35V Electrolytic ±20%,35v cap capacitor elec electrolytic microfarad smd,,Passive
+C1804,C,22pF,CL21C220JBANNNC,Samsung,Device:C,LCSC:C_smd_cer_0805,0805 ±10%,0805 cap capacitor picofarad smd,,Passive
+C19666,C,4.7µF,CL10A475KO8NNNC,Samsung,Device:C,LCSC:C_smd_cer_0603,0603 ±10%,0603 cap capacitor microfarad smd,,Passive
+C19702,C,10µF,CL10A106KP8NNNC,Samsung,Device:C,LCSC:C_smd_cer_0603,0603 10V X5R ±10%,0603 10v cap capacitor microfarad smd,,Passive
+C23733,C,4.7µF,CL05A475MP5NRNC,Samsung,Device:C,LCSC:C_smd_cer_0402,0402 ±10%,0402 cap capacitor microfarad smd,,Passive
+C240916,C,8MHz,49S-8.000-20-20-20_A,YXC,Device:Crystal,LCSC:Y_tht_HC49,[Y] HC-49S ±20ppm Crystal,cap capacitor clock crystal oscillator through-hole tht xtal,,Passive
+C2682775,C,8MHz,X32258MOB4SI,Abracon,Device:Crystal_GND24,LCSC:Y_smd_xtal_3225,[Y] 3.2x2.5mm ±10ppm Crystal,cap capacitor clock crystal oscillator smd xtal,,Passive
+C277508,C,4.7µF,CC1206KKX7R8BB475,Yageo,Device:C,LCSC:C_smd_cer_1206,1206 X7R ±10%,1206 cap capacitor microfarad smd,,Passive
+C28233,C,100nF,CL21B104KCFNNNE,Samsung,Device:C,LCSC:C_smd_cer_0805,0805 ±10%,0805 cap capacitor nanofarad smd,,Passive
+C307331,C,100nF,CL05B104KB54PNC,Samsung,Device:C,LCSC:C_smd_cer_0402,0402 ±10%,0402 cap capacitor nanofarad smd,,Passive
+C307442,C,120pF,CL05C121JB5NNNC,Samsung,Device:C,LCSC:C_smd_cer_0402,0402 ±10%,0402 cap capacitor picofarad smd,,Passive
+C318563,C,4.7µF,CL05A475MO5NUNC,Samsung,Device:C,LCSC:C_smd_cer_0402,0402 16V ±10%,0402 16v cap capacitor microfarad smd,,Passive
+C336209,C,47µF,EEEHA1H470XP,Panasonic,Device:C,LCSC:C_smd_elec_6.3mm_1,6.3x5.8mm 50V Electrolytic ±20%,50v cap capacitor elec electrolytic microfarad smd,,Passive
+C386109,C,470nF,UMK105ABJ474KV-F,Taiyo Yuden,Device:C,LCSC:C_smd_cer_0402,0402 10V X5R ±10%,0402 10v cap capacitor nanofarad smd,,Passive
+C401604,C,4.7µF,EEE1CA4R7NR,Panasonic,Device:C,LCSC:C_smd_elec_4.0mm_2,4.0x5.4mm 16V Electrolytic ±20%,16v cap capacitor elec electrolytic microfarad smd,,Passive
+C401606,C,1µF,EEE1HA010NR,Panasonic,Device:C,LCSC:C_smd_elec_4.0mm_2,4.0x5.4mm 50V Electrolytic ±20%,50v cap capacitor elec electrolytic microfarad smd,,Passive
+C409333,C,40MHz,8Z40000030,TXC,Device:Crystal_GND24,LCSC:Y_smd_xtal_2520,[Y] 2.5x2.0mm ±10ppm Crystal,cap capacitor clock crystal oscillator smd xtal,,Passive
+C441742,C,15pF,GJM1555C1H150FB01D,Murata,Device:C,LCSC:C_smd_cer_0402,0402 ±10%,0402 cap capacitor picofarad smd,,Passive
+C45783,C,22µF,CL21A226MAQNNNE,Samsung,Device:C,LCSC:C_smd_cer_0805,0805 ±10%,0805 cap capacitor microfarad smd,,Passive
+C52923,C,1µF,CL05A105KA5NQNC,Samsung,Device:C,LCSC:C_smd_cer_0402,0402 X5R ±10%,0402 cap capacitor microfarad smd,,Passive
+C57112,C,10nF,0603B103K500NT,Fenghua,Device:C,LCSC:C_smd_cer_0603,0603 ±10%,0603 cap capacitor nanofarad smd,,Passive
+C59461,C,22µF,CL10A226MQ8NRNC,Samsung,Device:C,LCSC:C_smd_cer_0603,0603 10V ±10%,0603 10v cap capacitor microfarad smd,,Passive
+C59526,C,4.3pF,0603CG4R3C500NT,Fenghua,Device:C,LCSC:C_smd_cer_0603,0603 C0G ±10%,0603 cap capacitor picofarad smd,,Passive
+C7171,C,10µF,TAJA106K016RNJ,AVX,Device:C,LCSC:C_smd_cer_3.2mm,Case-A Tantalum 16V 10%,16v cap capacitor microfarad smd tant tantalum,,Passive
+C7194,C,10µF,TAJB106K025RNJ,AVX,Device:C,LCSC:C_smd_cer_3.5mm,Case-B Tantalum 25V 10%,25v cap capacitor microfarad smd tant tantalum,,Passive
+C72478,C,100µF,RVT1V101M0607,Lelon,Device:C,LCSC:C_smd_elec_6.3mm_2,6.3mm Electrolytic 35V,35v cap capacitor elec electrolytic microfarad smd,,Passive
+C72494,C,220µF,RVT1A221M0605-C72494,Lelon,Device:C,LCSC:C_smd_elec_6.3mm_1,6.3mm Electrolytic 10V,10v cap capacitor elec electrolytic microfarad smd,,Passive
+C8020,C,22µF,TAJB226K016RNJ,AVX,Device:C,LCSC:C_smd_tant_B,Case-B Tantalum 16V 10%,16v cap capacitor microfarad smd tant tantalum,,Passive
+C98190,C,22µF,CL21A226MOQNNNE,Samsung,Device:C,LCSC:C_smd_cer_0805,0805 ±10%,0805 cap capacitor microfarad smd,,Passive
+C123820,D,26V TVS,SMBJ26A,MDD,Device:D,LCSC:D_smd_pwr_SMB,SMB 26V 42.1V@6.5A Unidirectional TVS,26v diode esd protection smd surge tvs,,Passive
+C130723,D,Green,FC-F1005UGK-520M5,Foryard,Device:LED,LCSC:D_smd_LED_0402_2,0402 Green 525nm 3.2V@5mA LED,0402 3.2v diode smd,,Passive
+C133102,D,STPS2L30A,STPS2L30A,ST,Device:D,LCSC:D_smd_pwr_SMA_2,SMA 30V 2A 0.45V@2A Schottky,30v diode smd,,Passive
+C133103,D,BAT60JFILM,BAT60JFILM,ST,Device:D,LCSC:D_smd_rect_SOD323_2,SOD-323 10V 3A 0.28V@100mA Schottky,10v diode smd,,Passive
+C188726,D,RGB,HSMF-C165,Avago,Device:LED,LCSC:D_smd_LED_HSMF,3.0x3.0mm RGB Common-Anode 2.1V/3.2V/3.2V LED,2.1v diode smd,,Passive
+C2128,D,1N4148,1N4148WST4,Changjiang,Device:D,LCSC:D_smd_rect_SOD323_2,SOD-123 100V 150mA 1.0V Rectifier,100v diode smd,,Passive
+C2286,D,Red,KT-0603R,Hubei Kento,Device:LED,LCSC:D_smd_LED_0603_3,0603 Red 625nm 2.0V@20mA LED,0603 2.0v diode smd,,Passive
+C284911,D,RGB,LTST-K563BGEW,Lite-On,Device:LED,LCSC:D_smd_LED_5.0x5.0mm,5.0mm Through-Hole RGB LED,diode smd,,Passive
+C2891705,D,1N5819,K1N5819HWS-7-F,Kexin,Device:D,LCSC:D_smd_rect_SOD323_1,SOD-123FL 40V 1A 0.45V Schottky,40v diode smd,,Passive
+C335606,D,LL4148,LL4148-M-08,LRC,Device:D,LCSC:D_smd_melf_SOD80_2,MiniMELF 100V 150mA 1.0V Rectifier,100v diode smd,,Passive
+C3646922,D,Green,XL-0201UGC,XINGLIGHT,Device:LED,LCSC:D_smd_LED_0.7x0.4mm,0.65x0.35mm Green 525nm LED,diode smd,,Passive
+C3646923,D,Red,XL-0201SURC,XINGLIGHT,Device:LED,LCSC:D_smd_LED_0201,0201 Red 625nm 1.9V@5mA LED,1.9v diode smd,,Passive
+C71911,D,Red,16-213_SDRC_S530-A3_TR8,XINGLIGHT,Device:LED,LCSC:D_smd_LED_0402_1,0402 Red 625nm 2.0V@20mA LED,0402 2.0v diode smd,,Passive
+C72038,D,Yellow,19-213_Y2C-CQ2R2L_3T(CY),XINGLIGHT,Device:LED,LCSC:D_smd_LED_0603_2,0603 Yellow 590nm 2.0V@20mA LED,0603 2.0v diode smd,,Passive
+C72041,D,Blue,19-217_BHC-ZL1M2RY_3T,XINGLIGHT,Device:LED,LCSC:D_smd_LED_0603_1,0603 Blue 470nm 3.2V@20mA LED,0603 3.2v diode smd,,Passive
+C72043,D,Green,19-217_GHC-YR1S2_3T,XINGLIGHT,Device:LED,LCSC:D_smd_LED_0603_3,0603 Green 525nm 3.2V@20mA LED,0603 3.2v diode smd,,Passive
+C7371905,D,Green,XL-1608PGC-06,XINGLIGHT,Device:LED,LCSC:D_smd_LED_0603_4,0603 Green 525nm 3.2V@5mA LED,0603 3.2v diode smd,,Passive
+C8062,D,5.6V,ZMM5V6,LRC,Device:D,LCSC:D_smd_melf_SOD80_1,SOD-80 5.6V 500mW ±5% Zener,5.6v diode smd,,Passive
+C84256,D,Red,FC-2012HRK-620D,Foryard,Device:LED,LCSC:D_smd_LED_0805,0805 Red 625nm 2.0V@20mA LED,0805 2.0v diode smd,,Passive
+C8678,D,SS34,SS34,MDD,Device:D,LCSC:D_smd_pwr_SMA_1,SMA 40V 3A 0.5V@3A Schottky,40v diode smd,,Passive
+C20617440,F,500mA,1210L050_48WR,Littelfuse,Device:Fuse,LCSC:F_smd_PTC_1210,1210 500mA 1A 30V PTC,30v fuse protection smd,,Passive
+C157920,J,JST-PH-6P,S6B-PH-K-S-(LF)(SN),JST,LCSC:S6B-PH-K-S-(LF)(SN),LCSC:J_tht_PH_6P,JST-PH 2.0mm 6P Male THT,connector header jack jst through-hole tht wire,,Passive
+C160352,J,JST-PH-2P,B2B-PH-SM4-TB(LF)(SN),JST,LCSC:B2B-PH-SM4-TB(LF)(SN),LCSC:J_smd_PH_4P,JST-PH 2.0mm 2P Male SMD,connector header jack jst smd wire,,Passive
+C168688,J,USB-C,TYPE-C3.1MT16P,SHOU HAN,LCSC:TYPE-C3.1MT16P_C168688,LCSC:J_smd_USB-C_16P,USB-C 2.0 16P Mid-Mount SMD,connector header interface jack smd type-c usb usb-c usbc,,Passive
+C2685069,J,2x5P,BH-00143,BOOMELE,LCSC:BH-00143,LCSC:J_smd_IDC,IDC 2.54mm 2x5P Male THT,connector header jack smd,,Passive
+C2829996,J,Conn,PH-00250,DEALON,LCSC:PH-00250,LCSC:J_tht_hdr_8P,2.54mm Header,connector header jack pin through-hole tht,,Passive
+C2856805,J,FPC-24P,FPC-05F-24PH20,XUNPU,LCSC:FPC-05F-24PH20,LCSC:J_smd_FPC_24P,FPC 0.5mm 24P Bottom-Contact SMD,connector header jack smd,,Passive
+C3406,J,2x8P,HDR-IDC-2.54-2X8P,BOOMELE,LCSC:HDR-IDC-2.54-2X8P,LCSC:J_tht_IDC_16P,IDC 2.54mm 2x8P Male THT,connector header jack through-hole tht,,Passive
+C492441,J,1x6P,BH254V-6P,BOOMELE,LCSC:BH254V-6P,LCSC:J_tht_IDC_6P,IDC 2.54mm 1x6P Male THT,connector header jack through-hole tht,,Passive
+C72334,J,3P,WJ500V-5.08-3P-14-00A,Ningbo Kangnex,LCSC:WJ500V-5.08-3P-14-00A,LCSC:J_tht_term_3P,Screw Terminal 5.08mm 3P THT,connector header jack through-hole tht,,Passive
+C79824,J,2x15P,2.54MM2*15,BOOMELE,LCSC:2.54MM2*15,LCSC:J_tht_IDC_30P,IDC 2.54mm 2x15P Male THT,connector header jack through-hole tht,,Passive
+C8465,J,2P,WJ500V-5.08-2P-14-00A,Ningbo Kangnex,LCSC:WJ500V-5.08-2P-14-00A,LCSC:J_tht_term_2P,Screw Terminal 5.08mm 2P THT,connector header jack through-hole tht,,Passive
+C1002,L,600Ω@100MHz,GZ1608D601TF,Sunlord,Device:L,LCSC:L_smd_chip_0603,0603 600Ω@100MHz 200mA 350mΩ Ferrite,0603 bead coil emi ferrite filter inductor smd,,Passive
+C133937,L,600Ω@100MHz,FCM1608KF-601T05,TDK,Device:L,LCSC:L_smd_chip_0603,0603 600Ω@100MHz 200mA 250mΩ Ferrite,0603 bead coil emi ferrite filter inductor smd,,Passive
+C162550,L,27nH,LQG18HN27NJ00D,Murata,Device:L,LCSC:L_smd_chip_0603,0603 27nH ±5% 500mA 540mΩ,0603 coil inductor smd,,Passive
+C167203,L,1µH,FXL0420-1R0-M,Sunlord,Device:L,LCSC:L_smd_pwr_4.4mm,4.0x4.0mm 1µH ±20% 2.1A 45mΩ,coil inductor smd,,Passive
+C2846223,L,100µH,ACPR1208S101MT,Sunlord,Device:L_Coupled,LCSC:L_smd_shld_12.5mm,12.5x12.5mm 100µH ±20% 5.2A 23mΩ,coil inductor smd,,Passive
+C312973,L,2.2µH,CDRH2D18HPNP-2R2NC,Sumida,Device:L,LCSC:L_smd_pwr_3.0mm,3.0x3.0mm 2.2µH ±20% 1.55A 85mΩ,coil inductor smd,,Passive
+C346307,L,2.1nH,FEC0603CP-2N1G-LRH,Fenghua,Device:L,LCSC:L_smd_pwr_1.7mm,0603 2.1nH ±2% 500mA 50mΩ,coil inductor smd,,Passive
+C354622,L,22µH,CKCS6028-22UH_M,Sumida,Device:L,LCSC:L_smd_pwr_6.0mm,6.0x6.0mm 22µH ±20% 4.3A 21mΩ,coil inductor smd,,Passive
+C408332,L,1µH,MWSA0402S-1R0MT,Sunlord,Device:L,LCSC:L_smd_pwr_4.4mm,4.0x4.0mm 1µH ±20% 2.6A 30mΩ,coil inductor smd,,Passive
+C76893,L,100Ω@100MHz,BLM18EG101TN1D,Murata,Device:L,LCSC:L_smd_chip_0603,0603 100Ω@100MHz 400mA 150mΩ Ferrite,0603 bead coil emi ferrite filter inductor smd,,Passive
+C99366,L,10µH,CMI201209X100KT,Sunlord,Device:L_Coupled,LCSC:L_smd_chip_0805,0805 10µH ±10% 80mA 1.4Ω,0805 coil inductor smd,,Passive
+C107701,R,22Ω,RC0603FR-0722RL,Yageo,Device:R,LCSC:R_smd_chip_0603,0603 ±1% 100mW,0603 res resistor smd,,Passive
+C110924,R,10kΩ,YC164-FR-0710KL,Yageo,Device:R_Pack04,LCSC:R_smd_array_0603_8P,0603x4 ±1% 63mW Array,0603 kohm res resistor smd,,Passive
+C114612,R,2.7kΩ,RC0603FR-072K7L,Yageo,Device:R,LCSC:R_smd_chip_0603,0603 ±1% 100mW,0603 kohm res resistor smd,,Passive
+C114619,R,36kΩ,RC0603FR-0736KL,Yageo,Device:R,LCSC:R_smd_chip_0603,0603 ±1% 100mW,0603 kohm res resistor smd,,Passive
+C114670,R,510Ω,RC0603FR-07510RL,Yageo,Device:R,LCSC:R_smd_chip_0603,0603 ±1% 100mW,0603 res resistor smd,,Passive
+C11702,R,1kΩ,0402WGF1001TCE,UniOhm,Device:R,LCSC:R_smd_chip_0402,0402 ±1% 63mW,0402 kohm res resistor smd,,Passive
+C17168,R,0Ω,0402WGF0000TCE,UniOhm,Device:R,LCSC:R_smd_chip_0402,0402 ±1% 63mW,0402 res resistor smd,,Passive
+C17414,R,10kΩ,0805W8F1002T5E,UniOhm,Device:R,LCSC:R_smd_chip_0805,0805 ±1% 125mW,0805 kohm res resistor smd,,Passive
+C17437,R,120Ω,0805W8F1200T5E,UniOhm,Device:R,LCSC:R_smd_chip_0805,0805 ±1% 125mW,0805 res resistor smd,,Passive
+C17477,R,0Ω,0805W8F0000T5E,UniOhm,Device:R,LCSC:R_smd_chip_0805,0805 ±1% 125mW,0805 res resistor smd,,Passive
+C17575,R,24kΩ,0805W8F2402T5E,UniOhm,Device:R,LCSC:R_smd_chip_0805,0805 ±1% 125mW,0805 kohm res resistor smd,,Passive
+C17630,R,330Ω,0805W8F3300T5E,UniOhm,Device:R,LCSC:R_smd_chip_0805,0805 ±1% 125mW,0805 res resistor smd,,Passive
+C17718,R,487Ω,0805W8F4870T5E,UniOhm,Device:R,LCSC:R_smd_chip_0805,0805 ±1% 125mW,0805 res resistor smd,,Passive
+C17798,R,680Ω,0805W8F6800T5E,UniOhm,Device:R,LCSC:R_smd_chip_0805,0805 ±1% 125mW,0805 res resistor smd,,Passive
+C17819,R,75kΩ,0805W8F7502T5E,UniOhm,Device:R,LCSC:R_smd_chip_0805,0805 ±1% 125mW,0805 kohm res resistor smd,,Passive
+C20197,R,1kΩ,4D03WGJ0102T5E,UniOhm,Device:R_Pack04,LCSC:R_smd_array_0603_8P,0603x4 ±5% 63mW Array,0603 kohm res resistor smd,,Passive
+C21189,R,0Ω,0603WAF0000T5E,UniOhm,Device:R,LCSC:R_smd_chip_0603,0603 ±1% 100mW,0603 res resistor smd,,Passive
+C21190,R,1kΩ,0603WAF1001T5E,UniOhm,Device:R,LCSC:R_smd_chip_0603,0603 ±1% 100mW,0603 kohm res resistor smd,,Passive
+C227092,R,464Ω,AC0402FR-07464RL,Yageo,Device:R,LCSC:R_smd_chip_0402,0402 ±1% 63mW,0402 res resistor smd,,Passive
+C22775,R,100Ω,0603WAF1000T5E,UniOhm,Device:R,LCSC:R_smd_chip_0603,0603 ±1% 100mW,0603 res resistor smd,,Passive
+C22776,R,102Ω,0603WAF1020T5E,UniOhm,Device:R,LCSC:R_smd_chip_0603,0603 ±1% 100mW,0603 res resistor smd,,Passive
+C22843,R,1.5kΩ,0603WAF1501T5E,UniOhm,Device:R,LCSC:R_smd_chip_0603,0603 ±1% 100mW,0603 kohm res resistor smd,,Passive
+C22940,R,2.4kΩ,0603WAF2401T5E,UniOhm,Device:R,LCSC:R_smd_chip_0603,0603 ±1% 100mW,0603 kohm res resistor smd,,Passive
+C22975,R,2kΩ,0603WAF2001T5E,UniOhm,Device:R,LCSC:R_smd_chip_0603,0603 ±1% 100mW,0603 kohm res resistor smd,,Passive
+C22978,R,3.3kΩ,0603WAF3301T5E,UniOhm,Device:R,LCSC:R_smd_chip_0603,0603 ±1% 100mW,0603 kohm res resistor smd,,Passive
+C23028,R,357Ω,0603WAF3570T5E,UniOhm,Device:R,LCSC:R_smd_chip_0603,0603 ±1% 100mW,0603 res resistor smd,,Passive
+C23162,R,4.7kΩ,0603WAF4701T5E,UniOhm,Device:R,LCSC:R_smd_chip_0603,0603 ±1% 100mW,0603 kohm res resistor smd,,Passive
+C23234,R,7.5kΩ,0603WAF7501T5E,UniOhm,Device:R,LCSC:R_smd_chip_0603,0603 ±1% 100mW,0603 kohm res resistor smd,,Passive
+C247041,R,191Ω,0805W8F1910T5E,UniOhm,Device:R,LCSC:R_smd_chip_0805,0805 ±1% 125mW,0805 res resistor smd,,Passive
+C25076,R,100Ω,0402WGF1000TCE,UniOhm,Device:R,LCSC:R_smd_chip_0402,0402 ±1% 63mW,0402 res resistor smd,,Passive
+C25079,R,120Ω,0402WGF1200TCE,UniOhm,Device:R,LCSC:R_smd_chip_0402,0402 ±1% 63mW,0402 res resistor smd,,Passive
+C25082,R,150Ω,0402WGF1500TCE,UniOhm,Device:R,LCSC:R_smd_chip_0402,0402 ±1% 63mW,0402 res resistor smd,,Passive
+C25089,R,20Ω,0402WGF200JTCE,UniOhm,Device:R,LCSC:R_smd_chip_0402,0402 ±5% 63mW,0402 res resistor smd,,Passive
+C25104,R,330Ω,0402WGF3300TCE,UniOhm,Device:R,LCSC:R_smd_chip_0402,0402 ±1% 63mW,0402 res resistor smd,,Passive
+C25105,R,33Ω,0402WGF330JTCE,UniOhm,Device:R,LCSC:R_smd_chip_0402,0402 ±5% 63mW,0402 res resistor smd,,Passive
+C25112,R,412Ω,0402WGF4120TCE,UniOhm,Device:R,LCSC:R_smd_chip_0402,0402 ±1% 63mW,0402 res resistor smd,,Passive
+C25117,R,470Ω,0402WGF4700TCE,UniOhm,Device:R,LCSC:R_smd_chip_0402,0402 ±1% 63mW,0402 res resistor smd,,Passive
+C25130,R,680Ω,0402WGF6800TCE,UniOhm,Device:R,LCSC:R_smd_chip_0402,0402 ±1% 63mW,0402 res resistor smd,,Passive
+C25131,R,68Ω,0402WGF680JTCE,UniOhm,Device:R,LCSC:R_smd_chip_0402,0402 ±5% 63mW,0402 res resistor smd,,Passive
+C25181,R,82Ω,0402WGJ0820TCE,UniOhm,Device:R,LCSC:R_smd_chip_0402,0402 ±5% 63mW,0402 res resistor smd,,Passive
+C25741,R,100kΩ,0402WGF1003TCE,UniOhm,Device:R,LCSC:R_smd_chip_0402,0402 ±1% 63mW,0402 kohm res resistor smd,,Passive
+C25744,R,10kΩ,0402WGF1002TCE,UniOhm,Device:R,LCSC:R_smd_chip_0402,0402 ±1% 63mW,0402 kohm res resistor smd,,Passive
+C25762,R,18kΩ,0402WGF1802TCE,UniOhm,Device:R,LCSC:R_smd_chip_0402,0402 ±1% 63mW,0402 kohm res resistor smd,,Passive
+C25768,R,22kΩ,0402WGF2202TCE,UniOhm,Device:R,LCSC:R_smd_chip_0402,0402 ±1% 63mW,0402 kohm res resistor smd,,Passive
+C25769,R,24kΩ,0402WGF2402TCE,UniOhm,Device:R,LCSC:R_smd_chip_0402,0402 ±1% 63mW,0402 kohm res resistor smd,,Passive
+C25783,R,39kΩ,0402WGF3902TCE,UniOhm,Device:R,LCSC:R_smd_chip_0402,0402 ±1% 63mW,0402 kohm res resistor smd,,Passive
+C25794,R,51kΩ,0402WGF5102TCE,UniOhm,Device:R,LCSC:R_smd_chip_0402,0402 ±1% 63mW,0402 kohm res resistor smd,,Passive
+C25798,R,75kΩ,0402WGF7502TCE,UniOhm,Device:R,LCSC:R_smd_chip_0402,0402 ±1% 63mW,0402 kohm res resistor smd,,Passive
+C25803,R,100kΩ,0603WAF1003T5E,UniOhm,Device:R,LCSC:R_smd_chip_0603,0603 ±1% 100mW,0603 kohm res resistor smd,,Passive
+C25804,R,10kΩ,0603WAF1002T5E,UniOhm,Device:R,LCSC:R_smd_chip_0603,0603 ±1% 100mW,0603 kohm res resistor smd,,Passive
+C25811,R,200kΩ,0603WAF2003T5E,UniOhm,Device:R,LCSC:R_smd_chip_0603,0603 ±1% 100mW,0603 kohm res resistor smd,,Passive
+C25867,R,1.5kΩ,0402WGF1501TCE,UniOhm,Device:R,LCSC:R_smd_chip_0402,0402 ±1% 63mW,0402 kohm res resistor smd,,Passive
+C25879,R,2.2kΩ,0402WGF2201TCE,UniOhm,Device:R,LCSC:R_smd_chip_0402,0402 ±1% 63mW,0402 kohm res resistor smd,,Passive
+C25900,R,4.7kΩ,0402WGF4701TCE,UniOhm,Device:R,LCSC:R_smd_chip_0402,0402 ±1% 63mW,0402 kohm res resistor smd,,Passive
+C25905,R,5.1kΩ,0402WGF5101TCE,UniOhm,Device:R,LCSC:R_smd_chip_0402,0402 ±1% 63mW,0402 kohm res resistor smd,,Passive
+C26083,R,1MΩ,0402WGF1004TCE,UniOhm,Device:R,LCSC:R_smd_chip_0402,0402 ±1% 63mW,0402 res resistor smd,,Passive
+C26959,R,19.6kΩ,0402WGF1962TCE,UniOhm,Device:R,LCSC:R_smd_chip_0402,0402 ±1% 63mW,0402 kohm res resistor smd,,Passive
+C27016,R,732kΩ,0402WGF7323TCE,UniOhm,Device:R,LCSC:R_smd_chip_0402,0402 ±1% 63mW,0402 kohm res resistor smd,,Passive
+C270600,R,43Ω,0402WGF430JTCE,UniOhm,Device:R,LCSC:R_smd_chip_0402,0402 ±5% 63mW,0402 res resistor smd,,Passive
+C270625,R,24Ω,0402WGF240JTCE,UniOhm,Device:R,LCSC:R_smd_chip_0402,0402 ±5% 63mW,0402 res resistor smd,,Passive
+C295884,R,110Ω,RC0402JR-07110RL,Yageo,Device:R,LCSC:R_smd_chip_0402,0402 ±5% 63mW,0402 res resistor smd,,Passive
+C321823,R,267kΩ,RS-03K2673FT,Ever Ohms,Device:R,LCSC:R_smd_chip_0603,0603 ±1% 100mW,0603 kohm res resistor smd,,Passive
+C407681,R,450kΩ,0402WGF4503TCE,UniOhm,Device:R,LCSC:R_smd_chip_0402,0402 ±1% 63mW,0402 kohm res resistor smd,,Passive
+C4109,R,2kΩ,0402WGF2001TCE,UniOhm,Device:R,LCSC:R_smd_chip_0402,0402 ±1% 63mW,0402 kohm res resistor smd,,Passive
+C4125,R,499Ω,0402WGF4990TCE,UniOhm,Device:R,LCSC:R_smd_chip_0402,0402 ±1% 63mW,0402 res resistor smd,,Passive
+C474274,R,475kΩ,0402WGF475KTCE,UniOhm,Device:R,LCSC:R_smd_chip_0402,0402 ±1% 63mW,0402 kohm res resistor smd,,Passive
+C52036,R,19.1kΩ,0402WGF1912TCE,UniOhm,Device:R,LCSC:R_smd_chip_0402,0402 ±1% 63mW,0402 kohm res resistor smd,,Passive
+C52534,R,357Ω,0805W8F3570T5E,UniOhm,Device:R,LCSC:R_smd_chip_0805,0805 ±1% 125mW,0805 res resistor smd,,Passive
+C53398,R,53.6kΩ,0402WGF5362TCE,UniOhm,Device:R,LCSC:R_smd_chip_0402,0402 ±1% 63mW,0402 kohm res resistor smd,,Passive
+C62741,R,2.8kΩ,0402WGF2801TCE,UniOhm,Device:R,LCSC:R_smd_chip_0402,0402 ±1% 63mW,0402 kohm res resistor smd,,Passive
+C881170,R,200Ω,CR0402J200RQ10Z,Ever Ohms,Device:R,LCSC:R_smd_chip_0402,0402 ±5% 63mW,0402 res resistor smd,,Passive
+C966621,R,59kΩ,CQ03WAF5902T5E,UniOhm,Device:R,LCSC:R_smd_chip_0603,0603 ±1% 100mW,0603 kohm res resistor smd,,Passive
+C127509,SW,Tactile,K2-1102SP-C4SC-04,Korean Hroparts,LCSC:K2-1102SP-C4SC-04,LCSC:SW_smd_tact_6.0mm,Tactile 6.0x6.0mm 4.3mm 160gf 50mA@12VDC,button momentary smd switch tactile,,Passive
+C145845,SW,Slide,K3-2235S-K1,Korean Hroparts,LCSC:K3-2235S-K1,LCSC:SW_smd_SPDT_slide,Slide SPDT 300mA@6VDC,button selector slide smd switch,,Passive
+C255515,SW,Encoder,EC11E18244A5,Alps,LCSC:EC11E18244A5,LCSC:SW_tht_enc_11mm,Rotary Encoder 20det w/Switch,button encoder input knob rotary switch through-hole tht,,Passive
+C271751,SW,Tactile,B3S-1002,Omron,LCSC:B3S-1002,LCSC:SW_smd_tact_6mm,Tactile 6.0x6.0mm 5mm 250gf 50mA@12VDC,button momentary smd switch tactile,,Passive
+C273347,SW,Toggle,100AWDP1T2B4M2QE,Dailywell,LCSC:100AWDP1T2B4M2QE,LCSC:SW_tht_DIP,Toggle SPDT 0.4VA@20VAC,button switch through-hole tht toggle,,Passive
+C318884,SW,Tactile,TS-1187A-B-A-B,XKB,LCSC:TS-1187A-B-A-B,LCSC:SW_smd_gen_5.1mm,Tactile 3.0x2.5mm 1.5mm 200gf 50mA@12VDC,button momentary smd switch tactile,,Passive
+C319012,SW,Slide,SS-12D10L5,C&K,LCSC:SS-12D10L5,LCSC:SW_tht_SPDT_slide_2,Slide SPDT 300mA@30VDC,button selector slide switch through-hole tht,,Passive
+C381097,SW,Slide,SS-3235D-03-L2,C&K,LCSC:SS-3235D-03-L2,LCSC:SW_smd_SP3T_slide,Slide DP3T 500mA@12VDC,button selector slide smd switch,,Passive
+C495917,SW,Tactile,DTSMG-68K-S-V-T_R,Diptronics,LCSC:DTSMG-68K-S-V-T_R,LCSC:SW_smd_gen_6.2mm,Tactile 2.9x3.5mm 1.2mm 200gf 50mA@12VDC,button momentary smd switch tactile,,Passive
+C5149832,SW,Slide,HXSK12D07VG3,HXWH,LCSC:HXSK12D07VG3,LCSC:SW_tht_SPDT_slide,Slide DPDT 300mA@30VDC,button selector slide switch through-hole tht,,Passive
+C908284,SW,Toggle,2AS3T1A1M2QES,Dailywell,LCSC:2AS3T1A1M2QES,LCSC:SW_tht_toggle,Toggle DPDT 5A@120VAC,button switch through-hole tht toggle,,Passive

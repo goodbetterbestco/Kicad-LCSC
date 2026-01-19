@@ -1,0 +1,27 @@
+{
+    "meta": {
+        "version": 2
+    },
+    "name": "LCSC Parts",
+    "description": "JLCPCB/LCSC component database",
+    "source": {
+  	"type": "odbc",
+  	"connection_string": "Driver=SQLite3;Database=/Users/evanthayer/Documents/KiCad/9.0/3rdparty/LCSC/database/parts.db;"
+    },
+    "libraries": [
+        {
+            "name": "LCSC_DB",
+            "table": "Parts",
+            "key": "LCSC",
+            "symbols": "Symbol",
+            "footprints": "Footprint",
+            "fields": [
+                {"column": "Name", "name": "Name", "visible_on_add": true, "visible_in_chooser": true},
+                {"column": "Value", "name": "Value", "visible_on_add": true, "visible_in_chooser": true},
+                {"column": "Description", "name": "Description", "visible_on_add": false, "visible_in_chooser": true},
+                {"column": "Datasheet", "name": "Datasheet", "visible_on_add": false, "visible_in_chooser": true},
+                {"column": "Pins", "name": "Pins", "visible_on_add": false, "visible_in_chooser": false}
+            ]
+        }
+    ]
+}
