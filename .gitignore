@@ -1,0 +1,25 @@
+# macOS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# KiCad backups and autosaves
+*-backups/
+*-bak
+*.bak
+_autosave-*
+*~
+\#*\#
+
+# KiCad local settings (user-specific, not for sharing)
+*.kicad_prl
+
+# KiCad caches
+fp-info-cache
+
+# Database (regenerated from CSV)
+3rdparty/LCSC/database/parts.db
+
+# Datasheets (synced via iCloud)
+3rdparty/LCSC/datasheets/
