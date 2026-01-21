@@ -230,3 +230,14 @@ C495917,SW,Tactile,DTSMG-68K-S-V-T_R,Diptronics,LCSC:DTSMG-68K-S-V-T_R,LCSC:SW_s
 C5149832,SW,Slide,HXSK12D07VG3,HXWH,LCSC:HXSK12D07VG3,LCSC:SW_tht_SPDT_slide,Slide DPDT 300mA@30VDC,button selector slide switch through-hole tht,,Passive
 C908284,SW,Toggle,2AS3T1A1M2QES,Dailywell,LCSC:2AS3T1A1M2QES,LCSC:SW_tht_toggle,Toggle DPDT 5A@120VAC,button switch through-hole tht toggle,,Passive
 C7275103,Y,24MHz,HY24MSMD3225EB1R30,YXC,Generics:Crystal_GND24,LCSC:Y_smd_xtal_3225,Crystal 24MHz 10pF ±10ppm,crystal xtal oscillator 24mhz smd 3225,https://datasheet.lcsc.com/lcsc/2201121800_YXC-Crystal-HY24MSMD3225EB1R30_C7275103.pdf,Passive
+C79313,U,SY8088AAC,SY8088AAC,Silergy,LCSC:SY8088AAC_C79313,LCSC:Q_smd_SOT235_1,Step-Down Regulator 1A 1.5MHz,buck dcdc ic power regulator smd sot23 step-down switching,https://datasheet.lcsc.com/lcsc/Silergy-Corp-SY8088AAC_C79313.pdf,Active
+C356134,D,PESD5V0S2BT,PESD5V0S2BT,Nexperia,LCSC:PESD5V0S2BT_C356134,LCSC:Q_smd_SOT23_1,ESD Protection TVS Dual 5V,esd protection smd sot23 surge tvs,https://assets.nexperia.com/documents/data-sheet/PESD5V0S2BT.pdf,Active
+C356540,D,PESD5V0S4UD,PESD5V0S4UD,Nexperia,LCSC:PESD5V0S4UD_C356540,LCSC:U_smd_SOT457_6P,ESD Protection TVS Quad 5V,esd protection smd sot457 surge tvs,https://assets.nexperia.com/documents/data-sheet/PESD5V0S4UD.pdf,Active
+C141882,J,RJ12,5521-6P6C,XKB,LCSC:RJ12_C141882,LCSC:J_tht_RJ12_6P6C,RJ12 Modular Jack 6P6C THT,connector jack modular rj12 through-hole tht,https://datasheet.lcsc.com/lcsc/2012041536_XKB-Connectivity-5521-6P6C_C141882.pdf,Active
+C2988369,J,USB-C,TYPE-C-31-M-12,Korean Hroparts,LCSC:USB-C-THT_C2988369,LCSC:J_tht_USB-C_16P,USB Type-C Receptacle 16P THT,connector jack through-hole tht type-c usb usb-c,https://datasheet.lcsc.com/lcsc/2012041536_Korean-Hroparts-TYPE-C-31-M-12_C2988369.pdf,Active
+C408412,L,1µH,NCD0805NP-1R0-M,Sunlord,Generics:L,LCSC:L_smd_chip_0805,0805 1µH ±20% 1.5A 120mΩ,0805 coil inductor smd,https://datasheet.lcsc.com/lcsc/2206011530_Sunlord-NCD0805NP-1R0-M_C408412.pdf,Passive
+C25809,R,150kΩ,0402WGF1503TCE,UniOhm,Generics:R,LCSC:R_smd_chip_0402,0402 ±1% 63mW,0402 kohm res resistor smd,,Passive
+C1547,C,10pF,0402CG100J500NT,FH,Generics:C,LCSC:C_smd_cer_0402,0402 50V ±5% C0G,0402 cap capacitor pf smd,,Passive
+C70069,F,2A,SMD1206P200TF,TECHFUSE,Generics:Fuse,LCSC:F_smd_PTC_1210,1206 2A 8V PTC Resettable,fuse protection ptc resettable smd,https://datasheet.lcsc.com/lcsc/1810171817_TECHFUSE-SMD1206P200TF_C70069.pdf,Passive
+C249492,C,100µF,RVT1V101M0810,Lelon,Generics:CP,LCSC:C_tht_elec_8mm,8x10mm 35V Electrolytic THT,35v cap capacitor elec electrolytic microfarad tht,https://datasheet.lcsc.com/lcsc/2206011530_Lelon-RVT1V101M0810_C249492.pdf,Passive
+C135143,C,100µF,VT1V101M-CRF54,Lelon,Generics:CP,LCSC:C_tht_elec_6.3mm,6.3x5.5mm 10V Electrolytic THT,10v cap capacitor elec electrolytic microfarad tht,https://datasheet.lcsc.com/lcsc/2206011530_Lelon-VT1V101M-CRF54_C135143.pdf,Passive
