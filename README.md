@@ -21,7 +21,8 @@ Personal KiCad 9.0 component library optimized for JLCPCB/LCSC PCB assembly serv
 │       │   ├── parts.csv          # Master parts list (source of truth)
 │       │   ├── parts.db           # SQLite database (generated, not tracked)
 │       │   ├── parts.kicad_dbl    # KiCad database library config
-│       │   └── rebuild_db.py      # Script to regenerate parts.db
+│       │   ├── rebuild_db.py      # Script to regenerate parts.db
+│       │   └── setup_kicad.py     # Automated setup script
 │       ├── datasheets/            # PDF datasheets (not distributed, see below)
 │       ├── footprints/
 │       │   └── LCSC.pretty/       # 123 custom footprints
@@ -36,18 +37,34 @@ Personal KiCad 9.0 component library optimized for JLCPCB/LCSC PCB assembly serv
 
 ## Installation
 
-### 1. Clone the repository
+### Quick Setup (macOS)
 
 ```bash
+# 1. Clone the repository
 cd ~/Documents/KiCad/9.0
 git clone https://github.com/goodbetterbestco/Kicad-LCSC.git .
+
+# 2. Launch KiCad 9.0 once (creates preferences directory), then quit
+
+# 3. Run the setup script
+python3 3rdparty/LCSC/database/setup_kicad.py
+
+# 4. Restart KiCad
 ```
 
-Or clone elsewhere and symlink.
+The setup script automatically:
+- Installs ODBC drivers via Homebrew (if needed)
+- Configures `~/.odbcinst.ini`
+- Builds `parts.db` from `parts.csv`
+- Adds path variables to KiCad
+- Configures symbol and footprint libraries
 
-### 2. Install SQLite ODBC Driver
+### Manual Setup
 
-The database library requires an ODBC driver.
+<details>
+<summary>Click to expand manual installation steps</summary>
+
+#### Install SQLite ODBC Driver
 
 **macOS (Homebrew):**
 ```bash
@@ -73,41 +90,39 @@ sudo apt install unixodbc libsqliteodbc
 **Windows:**
 Download from http://www.ch-werner.de/sqliteodbc/
 
-### 3. Build the Database
+#### Build the Database
 
 ```bash
 cd ~/Documents/KiCad/9.0/3rdparty/LCSC/database
 python3 rebuild_db.py
 ```
 
-### 4. Configure KiCad Path Variable
+#### Configure KiCad Path Variables
 
 1. Open KiCad → **Preferences → Configure Paths**
-2. Add variable: `KICAD9_3DMODEL_DIR`
-3. Set path to: `${HOME}/Documents/KiCad/9.0/3dmodels`
+2. Add variable: `KICAD9_3RD_PARTY` → `/Users/YOUR_USERNAME/Documents/KiCad/9.0/3rdparty`
+3. Add variable: `KICAD9_3DMODEL_DIR` → `/Users/YOUR_USERNAME/Documents/KiCad/9.0/3dmodels`
 
-### 5. Add Database Library to KiCad
-
-1. Open KiCad → **Preferences → Manage Symbol Libraries**
-2. Click **Add** (folder icon)
-3. Navigate to: `3rdparty/LCSC/database/parts.kicad_dbl`
-4. Click **OK**
-
-### 6. Add Footprint Library
-
-1. **Preferences → Manage Footprint Libraries**
-2. Click **Add** (folder icon)  
-3. Navigate to: `3rdparty/LCSC/footprints/LCSC.pretty`
-4. Set nickname to `LCSC`
-
-### 7. Add Symbol Libraries (Optional)
-
-The database library references these automatically, but you can add them for direct access:
+#### Add Symbol Libraries
 
 1. **Preferences → Manage Symbol Libraries**
-2. Add `symbols/Generics.kicad_sym` (nickname: `Generics`)
-3. Add `3rdparty/LCSC/symbols/LCSC.kicad_sym` (nickname: `LCSC`)
-4. Optionally uncheck **Visible** for both (database library references them)
+2. Add `symbols/Generics.kicad_sym` (nickname: `Generics`, check **Hidden**)
+3. Add `3rdparty/LCSC/symbols/LCSC.kicad_sym` (nickname: `LCSC`, check **Hidden**)
+4. Add `3rdparty/LCSC/database/parts.kicad_dbl` (nickname: `parts`)
+
+#### Add Footprint Library
+
+1. **Preferences → Manage Footprint Libraries**
+2. Add `3rdparty/LCSC/footprints/LCSC.pretty` (nickname: `LCSC`)
+
+</details>
+
+### Datasheets
+
+Datasheets are not tracked in git. If migrating from another workstation, manually copy:
+```
+~/Documents/KiCad/9.0/3rdparty/LCSC/datasheets/
+```
 
 ## Usage
 
@@ -115,7 +130,7 @@ The database library references these automatically, but you can add them for di
 
 1. Press **A** in schematic editor
 2. Search by value (e.g., "10k"), description ("LDO 3.3V"), or keywords ("esp32 wifi")
-3. Select part from **parts-LCSC** library
+3. Select part from **parts** library
 4. All fields auto-populate: LCSC number, footprint, datasheet, MPN, manufacturer
 
 ### Viewing Datasheets
