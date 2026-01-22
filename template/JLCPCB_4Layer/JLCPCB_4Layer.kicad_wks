@@ -1,0 +1,86 @@
+(kicad_wks
+	(version 20231118)
+	(generator "pl_editor")
+	(generator_version "9.0")
+	(setup
+		(textsize 1.5 1.5)
+		(linewidth 0.15)
+		(textlinewidth 0.15)
+		(left_margin 10)
+		(right_margin 10)
+		(top_margin 10)
+		(bottom_margin 10)
+	)
+	(rect
+		(name "")
+		(start 0 0 ltcorner)
+		(end 0 0 rbcorner)
+		(linewidth 0.35)
+	)
+	(rect
+		(name "")
+		(start 110 0 rbcorner)
+		(end 0 24 rbcorner)
+	)
+	(line
+		(name "")
+		(start 110 12 rbcorner)
+		(end 0 12 rbcorner)
+	)
+	(line
+		(name "")
+		(start 50 0 rbcorner)
+		(end 50 12 rbcorner)
+	)
+	(line
+		(name "")
+		(start 80 0 rbcorner)
+		(end 80 24 rbcorner)
+	)
+	(tbtext "Title:"
+		(name "")
+		(pos 109 22 rbcorner)
+		(font
+			(size 1.3 1.3)
+		)
+	)
+	(tbtext "${TITLE}"
+		(name "")
+		(pos 109 18 rbcorner)
+		(font
+			(size 2.5 2.5)
+			(bold)
+		)
+	)
+	(tbtext "Rev: ${REVISION}"
+		(name "")
+		(pos 79 10 rbcorner)
+	)
+	(tbtext "Date: ${ISSUE_DATE}"
+		(name "")
+		(pos 79 6 rbcorner)
+	)
+	(tbtext "Sheet: ${#}/${##}"
+		(name "")
+		(pos 79 2 rbcorner)
+	)
+	(tbtext "${COMMENT1}"
+		(name "")
+		(pos 49 10 rbcorner)
+	)
+	(tbtext "${COMPANY}"
+		(name "")
+		(pos 49 6 rbcorner)
+		(font
+			(bold)
+		)
+	)
+	(tbtext "JLCPCB 4-Layer"
+		(name "")
+		(pos 49 2 rbcorner)
+		(font
+			(size 1.2 1.2)
+			(italic)
+		)
+	)
+)
