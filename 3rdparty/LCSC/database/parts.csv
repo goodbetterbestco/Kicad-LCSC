@@ -229,16 +229,18 @@ C381097,SW,Slide,SS-3235D-03-L2,C&K,LCSC:SS-3235D-03-L2,LCSC:SW_smd_SP3T_slide,S
 C495917,SW,Tactile,DTSMG-68K-S-V-T_R,Diptronics,LCSC:DTSMG-68K-S-V-T_R,LCSC:SW_smd_gen_6.2mm,Tactile 2.9x3.5mm 1.2mm 200gf 50mA@12VDC,button momentary smd switch tactile,,Passive
 C5149832,SW,Slide,HXSK12D07VG3,HXWH,LCSC:HXSK12D07VG3,LCSC:SW_tht_SPDT_slide,Slide DPDT 300mA@30VDC,button selector slide switch through-hole tht,,Passive
 C908284,SW,Toggle,2AS3T1A1M2QES,Dailywell,LCSC:2AS3T1A1M2QES,LCSC:SW_tht_toggle,Toggle DPDT 5A@120VAC,button switch through-hole tht toggle,,Passive
-C7275103,Y,24MHz,HY24MSMD3225EB1R30,YXC,Generics:Crystal_GND24,LCSC:Y_smd_xtal_3225,Crystal 24MHz 10pF ±10ppm,crystal xtal oscillator 24mhz smd 3225,https://datasheet.lcsc.com/lcsc/2201121800_YXC-Crystal-HY24MSMD3225EB1R30_C7275103.pdf,Passive
+C7275103,Y,24MHz,HY24MSMD3225EB1R30,YXC,Generics:Crystal_GND24,LCSC:Y_smd_xtal_3225,Crystal 24MHz 10pF ±10ppm,crystal xtal oscillator 24mhz smd 3225,/Users/evanthayer/Documents/kicad/9.0/3rdparty//LCSC/datasheets/2201121800_YXC-Crystal-HY24MSMD3225EB1R30_C7275103.pdf,Passive
 C79313,U,SY8088AAC,SY8088AAC,Silergy,LCSC:SY8088AAC_C79313,LCSC:Q_smd_SOT235_1,Step-Down Regulator 1A 1.5MHz,buck dcdc ic power regulator smd sot23 step-down switching,/Users/evanthayer/Documents/kicad/9.0/3rdparty/LCSC/datasheets/C79313_SY8088AAC.pdf,Active
 C356134,D,PESD5V0S2BT,PESD5V0S2BT,Nexperia,Generics:D,LCSC:Q_smd_SOT23_1,ESD Protection TVS Dual 5V,esd protection smd sot23 surge tvs,/Users/evanthayer/Documents/kicad/9.0/3rdparty/LCSC/datasheets/C356134_PESD5V0S2BT.pdf,Active
 C356540,D,PESD5V0S4UD,PESD5V0S4UD,Nexperia,Generics:D,LCSC:U_smd_SOT666_6P,ESD Protection TVS Quad 5V,esd protection smd sot457 surge tvs,/Users/evanthayer/Documents/kicad/9.0/3rdparty/LCSC/datasheets/C356540_PESD5V0S4UD.pdf,Active
-C408412,L,1µH,NCD0805NP-1R0-M,Sunlord,Generics:L,LCSC:L_smd_chip_0805,0805 1µH ±20% 1.5A 120mΩ,0805 coil inductor smd,https://datasheet.lcsc.com/lcsc/2206011530_Sunlord-NCD0805NP-1R0-M_C408412.pdf,Passive
+C408412,L,1µH,NCD0805NP-1R0-M,Sunlord,Generics:L,LCSC:L_smd_chip_0805,0805 1µH ±20% 1.5A 120mΩ,0805 coil inductor smd,/Users/evanthayer/Documents/kicad/9.0/3rdparty//LCSC/datasheets/2206011530_Sunlord-NCD0805NP-1R0-M_C408412.pdf,Passive
 C25809,R,150kΩ,0402WGF1503TCE,UniOhm,Generics:R,LCSC:R_smd_chip_0402,0402 ±1% 63mW,0402 kohm res resistor smd,,Passive
 C1547,C,10pF,0402CG100J500NT,FH,Generics:C,LCSC:C_smd_cer_0402,0402 50V ±5% C0G,0402 cap capacitor pf smd,,Passive
-C70069,F,2A,SMD1206P200TF,TECHFUSE,Generics:Fuse,LCSC:F_smd_PTC_1210,1206 2A 8V PTC Resettable,fuse protection ptc resettable smd,https://datasheet.lcsc.com/lcsc/1810171817_TECHFUSE-SMD1206P200TF_C70069.pdf,Passive
+C70069,F,2A,SMD1206P200TF,TECHFUSE,Generics:Fuse,LCSC:F_smd_PTC_1210,1206 2A 8V PTC Resettable,fuse protection ptc resettable smd,/Users/evanthayer/Documents/kicad/9.0/3rdparty//LCSC/datasheets/1810171817_TECHFUSE-SMD1206P200TF_C70069.pdf,Passive
 C77859,J,RJ12,DS1133-S60BPX,Connfly,LCSC:DS1133-S60BPX,LCSC:RJ11-TH_DS1133-S60BPX,RJ12 Modular Jack 6P6C THT,connector jack modular rj12 through-hole tht,,Active
 C2840393,J,USB-C,TYPEC-306DDW-ARP16,XunPu,LCSC:TYPEC-306DDW-ARP16,LCSC:USB-C-TH_TYPEC-306DDW-ARP16,USB Type-C Receptacle 16P THT,connector jack through-hole tht type-c usb usb-c,,Active
 C398833,C,100uF,ERS1VM101F11OT,Aishi,Generics:CP,LCSC:CAP-TH_BD8.0-P3.50-D0.6-FD,100uF 35V Electrolytic 8x11.5mm THT,35v cap capacitor elec electrolytic microfarad tht,,Passive
 C88832,C,220uF,35YXF220MEFC10X12.5,Rubycon,Generics:CP,LCSC:CAP-TH_BD10.0-P5.00-D1.0-FD,220uF 35V Electrolytic 10x12.5mm THT,35v cap capacitor elec electrolytic microfarad tht,,Passive
 C503218,C,100uF,01EC5194SHC100UF10V,Lelon,Generics:CP,LCSC:CAP-TH_BD6.3-P2.50-D1.0-FD,100uF 10V Electrolytic 6.3x11mm THT,10v cap capacitor elec electrolytic microfarad tht,,Passive
+C2931187,U,5V 2A,K7805-2000R3,DEXU,LCSC:K7805-2000R3,LCSC:K7805-2000R3,DC-DC 6-30V to 5V 2A Step-Down Module SIP-3,regulator buck step-down dc-dc 5v 2a module power,,Power
+C2931187,U,5V 2A,K7805-2000R3,DEXU,Converter_DCDC:OKI-78SR-5_1.5-W36-C,LCSC:K7805-2000R3,DC-DC 6-30V to 5V 2A Step-Down Module SIP-3,regulator buck step-down dc-dc 5v 2a module power,/Users/evanthayer/Documents/kicad/9.0/3rdparty//LCSC/datasheets/C2931187_K7805-2000R3.pdf,Power
