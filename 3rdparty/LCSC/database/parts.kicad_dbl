@@ -16,13 +16,13 @@
             "symbols": "Symbol",
             "footprints": "Footprint",
             "fields": [
-                {"column": "LCSC", "name": "LCSC", "visible_on_add": true, "visible_in_chooser": true},
+                {"column": "LCSC", "name": "LCSC", "visible_on_add": false, "visible_in_chooser": true},
                 {"column": "Value", "name": "Value", "visible_on_add": true, "visible_in_chooser": true},
-                {"column": "MPN", "name": "MPN", "visible_on_add": true, "visible_in_chooser": true},
-                {"column": "Manufacturer", "name": "Manufacturer", "visible_on_add": true, "visible_in_chooser": false},
+                {"column": "MPN", "name": "MPN", "visible_on_add": false, "visible_in_chooser": true},
+                {"column": "Manufacturer", "name": "Manufacturer", "visible_on_add": false, "visible_in_chooser": false},
                 {"column": "Description", "name": "Description", "visible_on_add": false, "visible_in_chooser": true},
                 {"column": "Keywords", "name": "ki_keywords", "visible_on_add": false, "visible_in_chooser": false},
-                {"column": "Datasheet", "name": "Datasheet", "visible_on_add": true, "visible_in_chooser": true}
+                {"column": "Datasheet", "name": "Datasheet", "visible_on_add": false, "visible_in_chooser": true}
             ]
         }
     ]

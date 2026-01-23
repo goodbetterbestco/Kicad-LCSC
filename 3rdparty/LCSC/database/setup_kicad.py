@@ -289,18 +289,18 @@ def configure_symbol_libraries():
     print_step("Configuring symbol libraries")
     
     # Use absolute paths for reliability
-    # Generics and LCSC are hidden - they're only referenced by the parts database
-    # Users interact with the "parts" database library which provides searchable access
+    # Generics is visible (power symbols, mounting holes, etc.)
+    # LCSC is hidden - only referenced by the parts database
     sym_lib_content = f"""(sym_lib_table
   (version 7)
-  (lib (name "Generics")(type "KiCad")(uri "{GENERICS_SYM}")(options "")(descr "Generic symbols for passives")(hidden))
+  (lib (name "Generics")(type "KiCad")(uri "{GENERICS_SYM}")(options "")(descr "Generic symbols and power"))
   (lib (name "LCSC")(type "KiCad")(uri "{LCSC_SYM}")(options "")(descr "LCSC atomic symbols")(hidden))
   (lib (name "parts")(type "Database")(uri "{PARTS_DBL}")(options "")(descr "LCSC parts database"))
 )
 """
     
     SYM_LIB_TABLE.write_text(sym_lib_content)
-    print_ok(f"Generics: {GENERICS_SYM} (hidden)")
+    print_ok(f"Generics: {GENERICS_SYM}")
     print_ok(f"LCSC: {LCSC_SYM} (hidden)")
     print_ok(f"parts: {PARTS_DBL}")
     

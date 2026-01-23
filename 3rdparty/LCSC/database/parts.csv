@@ -131,7 +131,7 @@ C2685069,J,2x5P,BH-00143,BOOMELE,LCSC:BH-00143,LCSC:J_smd_IDC,IDC 2.54mm 2x5P Ma
 C2829996,J,Conn,PH-00250,DEALON,LCSC:PH-00250,LCSC:J_tht_hdr_8P,2.54mm Header,connector header jack pin through-hole tht,,Passive
 C2856805,J,FPC-24P,FPC-05F-24PH20,XUNPU,LCSC:FPC-05F-24PH20,LCSC:J_smd_FPC_24P,FPC 0.5mm 24P Bottom-Contact SMD,connector header jack smd,,Passive
 C3406,J,2x8P,HDR-IDC-2.54-2X8P,BOOMELE,LCSC:HDR-IDC-2.54-2X8P,LCSC:J_tht_IDC_16P,IDC 2.54mm 2x8P Male THT,connector header jack through-hole tht,,Passive
-C492441,J,1x6P,BH254V-6P,BOOMELE,LCSC:BH254V-6P,LCSC:J_tht_IDC_6P,IDC 2.54mm 1x6P Male THT,connector header jack through-hole tht,,Passive
+C492441,J,2x3P,BH254V-6P,BOOMELE,LCSC:BH254V-6P,LCSC:J_tht_IDC_6P,IDC 2.54mm 2x3P Male THT,connector header jack through-hole tht,,Passive
 C72334,J,3P,WJ500V-5.08-3P-14-00A,Ningbo Kangnex,LCSC:WJ500V-5.08-3P-14-00A,LCSC:J_tht_term_3P,Screw Terminal 5.08mm 3P THT,connector header jack through-hole tht,,Passive
 C79824,J,2x15P,2.54MM2*15,BOOMELE,LCSC:2.54MM2*15,LCSC:J_tht_IDC_30P,IDC 2.54mm 2x15P Male THT,connector header jack through-hole tht,,Passive
 C8465,J,2P,WJ500V-5.08-2P-14-00A,Ningbo Kangnex,LCSC:WJ500V-5.08-2P-14-00A,LCSC:J_tht_term_2P,Screw Terminal 5.08mm 2P THT,connector header jack through-hole tht,,Passive
@@ -233,14 +233,10 @@ C7275103,Y,24MHz,HY24MSMD3225EB1R30,YXC,Generics:Crystal_GND24,LCSC:Y_smd_xtal_3
 C79313,U,SY8088AAC,SY8088AAC,Silergy,LCSC:SY8088AAC_C79313,LCSC:Q_smd_SOT235_1,Step-Down Regulator 1A 1.5MHz,buck dcdc ic power regulator smd sot23 step-down switching,/Users/evanthayer/Documents/kicad/9.0/3rdparty/LCSC/datasheets/C79313_SY8088AAC.pdf,Active
 C356134,D,PESD5V0S2BT,PESD5V0S2BT,Nexperia,Generics:D,LCSC:Q_smd_SOT23_1,ESD Protection TVS Dual 5V,esd protection smd sot23 surge tvs,/Users/evanthayer/Documents/kicad/9.0/3rdparty/LCSC/datasheets/C356134_PESD5V0S2BT.pdf,Active
 C356540,D,PESD5V0S4UD,PESD5V0S4UD,Nexperia,Generics:D,LCSC:U_smd_SOT666_6P,ESD Protection TVS Quad 5V,esd protection smd sot457 surge tvs,/Users/evanthayer/Documents/kicad/9.0/3rdparty/LCSC/datasheets/C356540_PESD5V0S4UD.pdf,Active
-C141882,J,RJ12,5521-6P6C,XKB,LCSC:RJ12_C141882,LCSC:J_tht_RJ12_6P6C,RJ12 Modular Jack 6P6C THT,connector jack modular rj12 through-hole tht,/Users/evanthayer/Documents/kicad/9.0/3rdparty/LCSC/datasheets/C141882_5521-6P6C.pdf,Active
-C2988369,J,USB-C,TYPE-C-31-M-12,Korean Hroparts,LCSC:USB-C-THT_C2988369,LCSC:J_tht_USB-C_16P,USB Type-C Receptacle 16P THT,connector jack through-hole tht type-c usb usb-c,/Users/evanthayer/Documents/kicad/9.0/3rdparty/LCSC/datasheets/C2988369_TYPE-C-31-M-12.pdf,Active
 C408412,L,1µH,NCD0805NP-1R0-M,Sunlord,Generics:L,LCSC:L_smd_chip_0805,0805 1µH ±20% 1.5A 120mΩ,0805 coil inductor smd,https://datasheet.lcsc.com/lcsc/2206011530_Sunlord-NCD0805NP-1R0-M_C408412.pdf,Passive
 C25809,R,150kΩ,0402WGF1503TCE,UniOhm,Generics:R,LCSC:R_smd_chip_0402,0402 ±1% 63mW,0402 kohm res resistor smd,,Passive
 C1547,C,10pF,0402CG100J500NT,FH,Generics:C,LCSC:C_smd_cer_0402,0402 50V ±5% C0G,0402 cap capacitor pf smd,,Passive
 C70069,F,2A,SMD1206P200TF,TECHFUSE,Generics:Fuse,LCSC:F_smd_PTC_1210,1206 2A 8V PTC Resettable,fuse protection ptc resettable smd,https://datasheet.lcsc.com/lcsc/1810171817_TECHFUSE-SMD1206P200TF_C70069.pdf,Passive
-C249492,C,100uF,RVT1V101M0810,Lelon,Generics:CP,LCSC:C_tht_elec_8mm,8x10mm 35V Electrolytic THT,35v cap capacitor elec electrolytic microfarad tht,https://datasheet.lcsc.com/lcsc/2206011530_Lelon-RVT1V101M0810_C249492.pdf,Passive
-C135143,C,100uF,VT1V101M-CRF54,Lelon,Generics:CP,LCSC:C_tht_elec_6.3mm,6.3x5.5mm 10V Electrolytic THT,10v cap capacitor elec electrolytic microfarad tht,https://datasheet.lcsc.com/lcsc/2206011530_Lelon-VT1V101M-CRF54_C135143.pdf,Passive
 C77859,J,RJ12,DS1133-S60BPX,Connfly,LCSC:DS1133-S60BPX,LCSC:RJ11-TH_DS1133-S60BPX,RJ12 Modular Jack 6P6C THT,connector jack modular rj12 through-hole tht,,Active
 C2840393,J,USB-C,TYPEC-306DDW-ARP16,XunPu,LCSC:TYPEC-306DDW-ARP16,LCSC:USB-C-TH_TYPEC-306DDW-ARP16,USB Type-C Receptacle 16P THT,connector jack through-hole tht type-c usb usb-c,,Active
 C398833,C,100uF,ERS1VM101F11OT,Aishi,Generics:CP,LCSC:CAP-TH_BD8.0-P3.50-D0.6-FD,100uF 35V Electrolytic 8x11.5mm THT,35v cap capacitor elec electrolytic microfarad tht,,Passive

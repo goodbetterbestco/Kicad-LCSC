@@ -1993,7 +1993,7 @@
     (on_board yes)
     (property
       "Reference"
-      "P"
+      "J"
       (id 0)
       (at 0 0.00 0)
       (effects (font (size 1.27 1.27) ) )
@@ -2051,7 +2051,7 @@
     (on_board yes)
     (property
       "Reference"
-      "USBC"
+      "J"
       (id 0)
       (at 0 24.13 0)
       (effects (font (size 1.27 1.27) ) )
@@ -2199,7 +2199,7 @@
     (on_board yes)
     (property
       "Reference"
-      "CN"
+      "J"
       (id 0)
       (at 0 7.62 0)
       (effects (font (size 1.27 1.27) ) )
@@ -2287,7 +2287,7 @@
     (on_board yes)
     (property
       "Reference"
-      "FPC"
+      "J"
       (id 0)
       (at 0 39.37 0)
       (effects (font (size 1.27 1.27) ) )
@@ -3077,7 +3077,7 @@
     (on_board yes)
     (property
       "Reference"
-      "P"
+      "J"
       (id 0)
       (at 0 0.00 0)
       (effects (font (size 1.27 1.27) ) )
@@ -3978,7 +3978,7 @@
     (on_board yes)
     (property
       "Reference"
-      "SK"
+      "J"
       (id 0)
       (at 0 12.70 0)
       (effects (font (size 1.27 1.27) ) )
@@ -4505,7 +4505,7 @@
     (on_board yes)
     (property
       "Reference"
-      "CN"
+      "J"
       (id 0)
       (at 0 11.43 0)
       (effects (font (size 1.27 1.27) ) )
@@ -6692,7 +6692,7 @@
     (on_board yes)
     (property
       "Reference"
-      "CN"
+      "J"
       (id 0)
       (at 0 24.13 0)
       (effects (font (size 1.27 1.27) ) )
@@ -8382,7 +8382,7 @@
     (on_board yes)
     (property
       "Reference"
-      "P"
+      "J"
       (id 0)
       (at 0 13.97 0)
       (effects (font (size 1.27 1.27) ) )
@@ -10542,7 +10542,7 @@
     (on_board yes)
     (property
       "Reference"
-      "CN"
+      "J"
       (id 0)
       (at 0 22.86 0)
       (effects (font (size 1.27 1.27) ) )
@@ -12737,7 +12737,7 @@
     (on_board yes)
     (property
       "Reference"
-      "USB"
+      "J"
       (id 0)
       (at 0 25.40 0)
       (effects (font (size 1.27 1.27) ) )
@@ -12903,7 +12903,7 @@
     (on_board yes)
     (property
       "Reference"
-      "RJ"
+      "J"
       (id 0)
       (at 0 -6.35 0)
       (effects (font (size 1.27 1.27) ) )
