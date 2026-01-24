@@ -26,7 +26,7 @@ C2678753,U,"PCA9685PW,118","PCA9685PW,118",NXP,"LCSC:PCA9685PW,118",LCSC:U_smd_T
 C2827693,U,USBLC6-2P6,USBLC6-2P6,TECH PUBLIC,LCSC:USBLC6-2P6_C2827693,LCSC:U_smd_SOT666_6P,USB ESD Protection TVS,battery chip esd ic interface protection safety smd surge tvs usb,/Users/evanthayer/Documents/kicad/9.0/3rdparty/LCSC/datasheets/C2827693_USBLC6-2P6.pdf,Active
 C2838502,U,ESP32-C3-MINI-1-N4,ESP32-C3-MINI-1-N4,Espressif,LCSC:ESP32-C3-MINI-1-N4,LCSC:U_smd_module_ESP32C3,WiFi+BLE MCU Module 4MB Flash,802.11 chip flash ic mcu memory microcontroller processor smd storage wifi wireless,/Users/evanthayer/Documents/kicad/9.0/3rdparty/LCSC/datasheets/C2838502_ESP32-C3-MINI-1-N4.pdf,Active
 C2874704,U,FDMA905P,FDMA905P,JSMSEMI,LCSC:FDMA905P_C2874704,LCSC:U_smd_DFN_6P_1,Dual P-Channel MOSFET -6A 20V,20v chip fet ic mosfet p-channel pfet pmos smd transistor,/Users/evanthayer/Documents/kicad/9.0/3rdparty/LCSC/datasheets/C2874704_FDMA905P.pdf,Active
-C2913202,U,ESP32-S3-WROOM-1,ESP32-S3-WROOM-1(N16R8),Espressif,LCSC:ESP32-S3-WROOM-1(N16R8),LCSC:U_smd_module_ESP32S3,WiFi+BLE MCU 16MB Flash 8MB PSRAM,802.11 chip flash ic mcu memory microcontroller processor smd storage wifi wireless,/Users/evanthayer/Documents/kicad/9.0/3rdparty/LCSC/datasheets/C2913202_ESP32-S3-WROOM-1_N16R8.pdf,Active
+C2913202,U,ESP32-S3-WROOM-1,ESP32-S3-WROOM-1(N16R8),Espressif,LCSC:ESP32-S3-WROOM-1(N16R8),LCSC:U_smd_module_ESP32S3,WiFi+BLE MCU 16MB Flash 8MB PSRAM,802.11 chip flash ic mcu memory microcontroller processor smd storage wifi wireless,/Users/evanthayer/Documents/KiCad/9.0/3rdparty/LCSC/datasheets/C2913202_ESP32-S3-WROOM-1-N16R8.pdf,Active
 C2977777,U,CH340N,CH340N,WCH,LCSC:CH340N_C2977777,LCSC:U_smd_SOP_8P_1,USB-UART Bridge,chip ic interface serial smd uart usb,/Users/evanthayer/Documents/kicad/9.0/3rdparty/LCSC/datasheets/C2977777_CH340N.pdf,Active
 C32254,U,FS8205,FS8205,Fortune,LCSC:FS8205,LCSC:Q_smd_SOT236_2,Dual N-Channel MOSFET 6A 20V,20v chip fet ic mosfet n-channel nfet nmos smd sot23 transistor,/Users/evanthayer/Documents/kicad/9.0/3rdparty/LCSC/datasheets/C32254_FS8205.pdf,Active
 C347373,U,XC6206P182MR,XC6206P182MR,UMW,LCSC:XC6206P182MR_C347373,LCSC:Q_smd_SOT23_4,LDO Regulator 1.8V 200mA,1.8v chip ic ldo linear power regulator smd sot23,/Users/evanthayer/Documents/kicad/9.0/3rdparty/LCSC/datasheets/C347373_XC6206P182MR.pdf,Active
@@ -64,45 +64,45 @@ C107183,C,2.2uF,CC1206KKX7R7BB225,Yageo,Generics:C,LCSC:C_smd_cer_1206,1206 50V 
 C12530,C,2.2uF,CL05A225MQ5NSNC,Samsung,Generics:C,LCSC:C_smd_cer_0402,0402 6.3V ±10%,0402 6.3v cap capacitor microfarad smd,,Passive
 C12674,C,8MHz,X49SM8MSD2SC,YXC,Generics:Crystal,LCSC:Y_smd_xtal_1148,[Y] 3.2x2.5mm ±10ppm -40~85°C Crystal,cap capacitor clock crystal oscillator smd xtal,,Passive
 C12891,C,22uF,CL31A226KAHNNNE,Samsung,Generics:C,LCSC:C_smd_cer_1206,1206 25V ±10%,1206 25v cap capacitor microfarad smd,,Passive
-C14663,C,100nF,CC0603KRX7R9BB104,Yageo,Generics:C,LCSC:C_smd_cer_0603,0603 X7R ±10%,0603 cap capacitor nanofarad smd,,Passive
-C15195,C,10nF,CL05B103KB5NNNC,Samsung,Generics:C,LCSC:C_smd_cer_0402,0402 ±10%,0402 cap capacitor nanofarad smd,,Passive
+C14663,C,100nF,CC0603KRX7R9BB104,Yageo,Generics:C,LCSC:C_smd_cer_0603,0603 50V X7R ±10%,0603 cap capacitor nanofarad smd,,Passive
+C15195,C,10nF,CL05B103KB5NNNC,Samsung,Generics:C,LCSC:C_smd_cer_0402,0402 50V ±10%,0402 cap capacitor nanofarad smd,,Passive
 C1525,C,100nF,CL05B104KO5NNNC,Samsung,Generics:C,LCSC:C_smd_cer_0402,0402 16V ±10%,0402 16v cap capacitor nanofarad smd,,Passive
 C15525,C,10uF,CL05A106MQ5NUNC,Samsung,Generics:C,LCSC:C_smd_cer_0402,0402 6.3V X5R ±10%,0402 6.3v cap capacitor microfarad smd,,Passive
 C1554,C,20pF,0402CG200J500NT,Fenghua,Generics:C,LCSC:C_smd_cer_0402,0402 50V C0G ±5%,0402 50v cap capacitor picofarad smd,,Passive
 C1555,C,22pF,0402CG220J500NT,Fenghua,Generics:C,LCSC:C_smd_cer_0402,0402 50V C0G ±5%,0402 50v cap capacitor picofarad smd,,Passive
-C15849,C,1uF,CL10A105KB8NNNC,Samsung,Generics:C,LCSC:C_smd_cer_0603,0603 X5R ±10%,0603 cap capacitor microfarad smd,,Passive
-C15850,C,10uF,CL21A106KAYNNNE,Samsung,Generics:C,LCSC:C_smd_cer_0805,0805 X5R ±10%,0805 cap capacitor microfarad smd,,Passive
-C1653,C,22pF,CL10C220JB8NNNC,Samsung,Generics:C,LCSC:C_smd_cer_0603,0603 ±10%,0603 cap capacitor picofarad smd,,Passive
+C15849,C,1uF,CL10A105KB8NNNC,Samsung,Generics:C,LCSC:C_smd_cer_0603,0603 50V X5R ±10%,0603 cap capacitor microfarad smd,,Passive
+C15850,C,10uF,CL21A106KAYNNNE,Samsung,Generics:C,LCSC:C_smd_cer_0805,0805 10V X5R ±10%,0805 cap capacitor microfarad smd,,Passive
+C1653,C,22pF,CL10C220JB8NNNC,Samsung,Generics:C,LCSC:C_smd_cer_0603,0603 50V ±10%,0603 cap capacitor picofarad smd,,Passive
 C165974,C,100uF,EEEFTH101XAP,Panasonic,Generics:C,LCSC:C_smd_elec_6.3mm_1,6.3x5.8mm 50V Electrolytic ±20%,50v cap capacitor elec electrolytic microfarad smd,,Passive
 C178621,C,100uF,EEEHD1V100AR,Panasonic,Generics:C,LCSC:C_smd_elec_5.0mm,5.0x5.4mm 35V Electrolytic ±20%,35v cap capacitor elec electrolytic microfarad smd,,Passive
-C1804,C,22pF,CL21C220JBANNNC,Samsung,Generics:C,LCSC:C_smd_cer_0805,0805 ±10%,0805 cap capacitor picofarad smd,,Passive
-C19666,C,4.7uF,CL10A475KO8NNNC,Samsung,Generics:C,LCSC:C_smd_cer_0603,0603 ±10%,0603 cap capacitor microfarad smd,,Passive
+C1804,C,22pF,CL21C220JBANNNC,Samsung,Generics:C,LCSC:C_smd_cer_0805,0805 50V ±10%,0805 cap capacitor picofarad smd,,Passive
+C19666,C,4.7uF,CL10A475KO8NNNC,Samsung,Generics:C,LCSC:C_smd_cer_0603,0603 16V ±10%,0603 cap capacitor microfarad smd,,Passive
 C19702,C,10uF,CL10A106KP8NNNC,Samsung,Generics:C,LCSC:C_smd_cer_0603,0603 10V X5R ±10%,0603 10v cap capacitor microfarad smd,,Passive
-C23733,C,4.7uF,CL05A475MP5NRNC,Samsung,Generics:C,LCSC:C_smd_cer_0402,0402 ±10%,0402 cap capacitor microfarad smd,,Passive
+C23733,C,4.7uF,CL05A475MP5NRNC,Samsung,Generics:C,LCSC:C_smd_cer_0402,0402 10V ±10%,0402 cap capacitor microfarad smd,,Passive
 C240916,C,8MHz,49S-8.000-20-20-20_A,YXC,Generics:Crystal,LCSC:Y_tht_HC49,[Y] HC-49S ±20ppm Crystal,cap capacitor clock crystal oscillator through-hole tht xtal,,Passive
 C2682775,C,8MHz,X32258MOB4SI,Abracon,Generics:Crystal_GND24,LCSC:Y_smd_xtal_3225,[Y] 3.2x2.5mm ±10ppm Crystal,cap capacitor clock crystal oscillator smd xtal,,Passive
-C277508,C,4.7uF,CC1206KKX7R8BB475,Yageo,Generics:C,LCSC:C_smd_cer_1206,1206 X7R ±10%,1206 cap capacitor microfarad smd,,Passive
-C28233,C,100nF,CL21B104KCFNNNE,Samsung,Generics:C,LCSC:C_smd_cer_0805,0805 ±10%,0805 cap capacitor nanofarad smd,,Passive
-C307331,C,100nF,CL05B104KB54PNC,Samsung,Generics:C,LCSC:C_smd_cer_0402,0402 ±10%,0402 cap capacitor nanofarad smd,,Passive
-C307442,C,120pF,CL05C121JB5NNNC,Samsung,Generics:C,LCSC:C_smd_cer_0402,0402 ±10%,0402 cap capacitor picofarad smd,,Passive
+C277508,C,4.7uF,CC1206KKX7R8BB475,Yageo,Generics:C,LCSC:C_smd_cer_1206,1206 25V X7R ±10%,1206 cap capacitor microfarad smd,,Passive
+C28233,C,100nF,CL21B104KCFNNNE,Samsung,Generics:C,LCSC:C_smd_cer_0805,0805 25V ±10%,0805 cap capacitor nanofarad smd,,Passive
+C307331,C,100nF,CL05B104KB54PNC,Samsung,Generics:C,LCSC:C_smd_cer_0402,0402 50V ±10%,0402 cap capacitor nanofarad smd,,Passive
+C307442,C,120pF,CL05C121JB5NNNC,Samsung,Generics:C,LCSC:C_smd_cer_0402,0402 50V ±10%,0402 cap capacitor picofarad smd,,Passive
 C318563,C,4.7uF,CL05A475MO5NUNC,Samsung,Generics:C,LCSC:C_smd_cer_0402,0402 16V ±10%,0402 16v cap capacitor microfarad smd,,Passive
 C336209,C,47uF,EEEHA1H470XP,Panasonic,Generics:C,LCSC:C_smd_elec_6.3mm_1,6.3x5.8mm 50V Electrolytic ±20%,50v cap capacitor elec electrolytic microfarad smd,,Passive
 C386109,C,470nF,UMK105ABJ474KV-F,Taiyo Yuden,Generics:C,LCSC:C_smd_cer_0402,0402 10V X5R ±10%,0402 10v cap capacitor nanofarad smd,,Passive
 C401604,C,4.7uF,EEE1CA4R7NR,Panasonic,Generics:C,LCSC:C_smd_elec_4.0mm_2,4.0x5.4mm 16V Electrolytic ±20%,16v cap capacitor elec electrolytic microfarad smd,,Passive
 C401606,C,1uF,EEE1HA010NR,Panasonic,Generics:C,LCSC:C_smd_elec_4.0mm_2,4.0x5.4mm 50V Electrolytic ±20%,50v cap capacitor elec electrolytic microfarad smd,,Passive
 C409333,C,40MHz,8Z40000030,TXC,Generics:Crystal_GND24,LCSC:Y_smd_xtal_2520,[Y] 2.5x2.0mm ±10ppm Crystal,cap capacitor clock crystal oscillator smd xtal,,Passive
-C441742,C,15pF,GJM1555C1H150FB01D,Murata,Generics:C,LCSC:C_smd_cer_0402,0402 ±10%,0402 cap capacitor picofarad smd,,Passive
-C45783,C,22uF,CL21A226MAQNNNE,Samsung,Generics:C,LCSC:C_smd_cer_0805,0805 ±10%,0805 cap capacitor microfarad smd,,Passive
-C52923,C,1uF,CL05A105KA5NQNC,Samsung,Generics:C,LCSC:C_smd_cer_0402,0402 X5R ±10%,0402 cap capacitor microfarad smd,,Passive
-C57112,C,10nF,0603B103K500NT,Fenghua,Generics:C,LCSC:C_smd_cer_0603,0603 ±10%,0603 cap capacitor nanofarad smd,,Passive
+C441742,C,15pF,GJM1555C1H150FB01D,Murata,Generics:C,LCSC:C_smd_cer_0402,0402 50V ±10%,0402 cap capacitor picofarad smd,,Passive
+C45783,C,22uF,CL21A226MAQNNNE,Samsung,Generics:C,LCSC:C_smd_cer_0805,0805 10V ±10%,0805 cap capacitor microfarad smd,,Passive
+C52923,C,1uF,CL05A105KA5NQNC,Samsung,Generics:C,LCSC:C_smd_cer_0402,0402 25V X5R ±10%,0402 cap capacitor microfarad smd,,Passive
+C57112,C,10nF,0603B103K500NT,Fenghua,Generics:C,LCSC:C_smd_cer_0603,0603 50V ±10%,0603 cap capacitor nanofarad smd,,Passive
 C59461,C,22uF,CL10A226MQ8NRNC,Samsung,Generics:C,LCSC:C_smd_cer_0603,0603 10V ±10%,0603 10v cap capacitor microfarad smd,,Passive
-C59526,C,4.3pF,0603CG4R3C500NT,Fenghua,Generics:C,LCSC:C_smd_cer_0603,0603 C0G ±10%,0603 cap capacitor picofarad smd,,Passive
+C59526,C,4.3pF,0603CG4R3C500NT,Fenghua,Generics:C,LCSC:C_smd_cer_0603,0603 50V C0G ±10%,0603 cap capacitor picofarad smd,,Passive
 C7171,C,10uF,TAJA106K016RNJ,AVX,Generics:C,LCSC:C_smd_cer_3.2mm,Case-A Tantalum 16V 10%,16v cap capacitor microfarad smd tant tantalum,,Passive
 C7194,C,10uF,TAJB106K025RNJ,AVX,Generics:C,LCSC:C_smd_cer_3.5mm,Case-B Tantalum 25V 10%,25v cap capacitor microfarad smd tant tantalum,,Passive
 C72478,C,100uF,RVT1V101M0607,Lelon,Generics:C,LCSC:C_smd_elec_6.3mm_2,6.3mm Electrolytic 35V,35v cap capacitor elec electrolytic microfarad smd,,Passive
 C72494,C,220uF,RVT1A221M0605-C72494,Lelon,Generics:C,LCSC:C_smd_elec_6.3mm_1,6.3mm Electrolytic 10V,10v cap capacitor elec electrolytic microfarad smd,,Passive
 C8020,C,22uF,TAJB226K016RNJ,AVX,Generics:C,LCSC:C_smd_tant_B,Case-B Tantalum 16V 10%,16v cap capacitor microfarad smd tant tantalum,,Passive
-C98190,C,22uF,CL21A226MOQNNNE,Samsung,Generics:C,LCSC:C_smd_cer_0805,0805 ±10%,0805 cap capacitor microfarad smd,,Passive
+C98190,C,22uF,CL21A226MOQNNNE,Samsung,Generics:C,LCSC:C_smd_cer_0805,0805 16V ±10%,0805 cap capacitor microfarad smd,,Passive
 C123820,D,26V TVS,SMBJ26A,MDD,Generics:D,LCSC:D_smd_pwr_SMB,SMB 26V 42.1V@6.5A Unidirectional TVS,26v diode esd protection smd surge tvs,,Passive
 C130723,D,Green,FC-F1005UGK-520M5,Foryard,Generics:LED,LCSC:D_smd_LED_0402_2,0402 Green 525nm 3.2V@5mA LED,0402 3.2v diode smd,,Passive
 C133102,D,STPS2L30A,STPS2L30A,ST,Generics:D,LCSC:D_smd_pwr_SMA_2,SMA 30V 2A 0.45V@2A Schottky,30v diode smd,,Passive
