@@ -11,6 +11,9 @@ It handles:
 5. Adding symbol libraries (Generics, LCSC, parts database)
 6. Adding footprint library (LCSC.pretty)
 7. Configuring power-user hotkeys (1-4 layer switching, M for measure)
+8. Mouse/touchpad settings (auto-pan enabled, center-on-zoom disabled)
+9. Schematic editor display options (dots grid, full crosshairs, Helvetica font)
+10. Custom dark color theme for schematic editor (colors/user.json)
 
 Run from any directory:
     python3 setup_kicad.py
@@ -41,14 +44,18 @@ SYM_LIB_TABLE = KICAD_PREFS_DIR / "sym-lib-table"
 FP_LIB_TABLE = KICAD_PREFS_DIR / "fp-lib-table"
 KICAD_COMMON = KICAD_PREFS_DIR / "kicad_common.json"
 HOTKEYS_FILE = KICAD_PREFS_DIR / "user.hotkeys"
+EESCHEMA_JSON = KICAD_PREFS_DIR / "eeschema.json"
+COLORS_DIR = KICAD_PREFS_DIR / "colors"
 
 # Hotkey bindings for 4-layer workflow
+# Set to "" to remove/clear a hotkey
 HOTKEY_CHANGES = {
     "pcbnew.Control.layerTop": "1",       # F.Cu
     "pcbnew.Control.layerBottom": "2",    # B.Cu
     "pcbnew.Control.layerInner1": "3",    # In1.Cu (GND)
     "pcbnew.Control.layerInner2": "4",    # In2.Cu (Power)
     "common.Interactive.measureTool": "M",
+    "common.Control.highContrastModeCycle": "",  # Remove H (conflicts with macOS hide)
 }
 
 # Library paths (absolute)
@@ -68,15 +75,15 @@ def print_step(msg):
 
 
 def print_ok(msg):
-    print(f"  ✓ {msg}")
+    print(f"  [OK] {msg}")
 
 
 def print_warn(msg):
-    print(f"  ⚠ {msg}")
+    print(f"  [WARN] {msg}")
 
 
 def print_err(msg):
-    print(f"  ✗ {msg}")
+    print(f"  [ERROR] {msg}")
 
 
 def check_prerequisites():
@@ -249,10 +256,10 @@ def configure_path_variables():
         print_err(f"Invalid JSON in kicad_common.json: {e}")
         return False
     
-    # Ensure environment.vars exists
-    if "environment" not in config:
+    # Ensure environment.vars exists (handle both missing key and null value)
+    if "environment" not in config or config["environment"] is None:
         config["environment"] = {}
-    if "vars" not in config["environment"]:
+    if "vars" not in config["environment"] or config["environment"]["vars"] is None:
         config["environment"]["vars"] = {}
     
     vars_section = config["environment"]["vars"]
@@ -325,7 +332,7 @@ def configure_footprint_libraries():
 
 
 def configure_hotkeys():
-    """Apply power-user hotkey bindings."""
+    """Apply power-user hotkey bindings and remove conflicting hotkeys."""
     print_step("Configuring hotkeys")
     
     if not HOTKEYS_FILE.exists():
@@ -348,9 +355,16 @@ def configure_hotkeys():
         if action in HOTKEY_CHANGES:
             old_hotkey = hotkey if hotkey else "(none)"
             new_hotkey = HOTKEY_CHANGES[action]
-            new_lines.append(f"{action}\t{new_hotkey}")
-            if old_hotkey != new_hotkey:
-                changes_made.append((action.split(".")[-1], old_hotkey, new_hotkey))
+            
+            if new_hotkey == "":
+                # Remove this hotkey (clear binding)
+                new_lines.append(action)  # No tab, no hotkey
+                if old_hotkey != "(none)":
+                    changes_made.append((action.split(".")[-1], old_hotkey, "(removed)"))
+            else:
+                new_lines.append(f"{action}\t{new_hotkey}")
+                if old_hotkey != new_hotkey:
+                    changes_made.append((action.split(".")[-1], old_hotkey, new_hotkey))
         else:
             new_lines.append(line)
     
@@ -359,9 +373,241 @@ def configure_hotkeys():
     
     if changes_made:
         for action, old, new in changes_made:
-            print_ok(f"{action}: {old} → {new}")
+            print_ok(f"{action}: {old} -> {new}")
     else:
         print_ok("Hotkeys already configured")
+    
+    return True
+
+
+def configure_mouse_settings():
+    """Configure mouse and touchpad pan/zoom settings in kicad_common.json."""
+    print_step("Configuring mouse and touchpad settings")
+    
+    if not KICAD_COMMON.exists():
+        print_err(f"kicad_common.json not found: {KICAD_COMMON}")
+        return False
+    
+    try:
+        with open(KICAD_COMMON, 'r') as f:
+            config = json.load(f)
+    except json.JSONDecodeError as e:
+        print_err(f"Invalid JSON in kicad_common.json: {e}")
+        return False
+    
+    # Ensure input section exists
+    if "input" not in config or config["input"] is None:
+        config["input"] = {}
+    
+    input_section = config["input"]
+    changes = []
+    
+    # Uncheck "Center and warp cursor on zoom"
+    if input_section.get("center_on_zoom") != False:
+        input_section["center_on_zoom"] = False
+        changes.append("center_on_zoom = false")
+    
+    # Check "Automatically pan while moving object"
+    if input_section.get("auto_pan") != True:
+        input_section["auto_pan"] = True
+        changes.append("auto_pan = true")
+    
+    # Set "Auto Pan Speed" to 3 of 9 (KiCad uses integer 1-9 scale)
+    auto_pan_speed = 3
+    if input_section.get("auto_pan_acceleration") != auto_pan_speed:
+        input_section["auto_pan_acceleration"] = auto_pan_speed
+        changes.append(f"auto_pan_acceleration = {auto_pan_speed} (3 of 9)")
+    
+    if changes:
+        with open(KICAD_COMMON, 'w') as f:
+            json.dump(config, f, indent=2)
+        for change in changes:
+            print_ok(change)
+    else:
+        print_ok("Mouse settings already configured")
+    
+    return True
+
+
+def configure_eeschema_settings():
+    """Configure schematic editor display options in eeschema.json."""
+    print_step("Configuring schematic editor settings")
+    
+    # Load existing config or create new
+    if EESCHEMA_JSON.exists():
+        try:
+            with open(EESCHEMA_JSON, 'r') as f:
+                config = json.load(f)
+        except json.JSONDecodeError as e:
+            print_warn(f"Invalid JSON in eeschema.json, creating new: {e}")
+            config = {}
+    else:
+        config = {}
+    
+    changes = []
+    
+    # Ensure nested structures exist
+    if "appearance" not in config or config["appearance"] is None:
+        config["appearance"] = {}
+    if "annotation" not in config or config["annotation"] is None:
+        config["annotation"] = {}
+    if "window" not in config or config["window"] is None:
+        config["window"] = {}
+    if "grid" not in config["window"] or config["window"]["grid"] is None:
+        config["window"]["grid"] = {}
+    if "cursor" not in config["window"] or config["window"]["cursor"] is None:
+        config["window"]["cursor"] = {}
+    
+    appearance = config["appearance"]
+    annotation = config["annotation"]
+    window_grid = config["window"]["grid"]
+    window_cursor = config["window"]["cursor"]
+    
+    # Grid Display: dots (style 0 = dots, 1 = lines, 2 = small crosses)
+    if window_grid.get("style") != 0:
+        window_grid["style"] = 0
+        changes.append("grid style = dots")
+    
+    # Cursor: select full window crosshairs
+    if window_cursor.get("fullscreen_cursor") != True:
+        window_cursor["fullscreen_cursor"] = True
+        changes.append("fullscreen_cursor = true")
+    
+    # Default font: Helvetica
+    if appearance.get("default_font") != "Helvetica":
+        appearance["default_font"] = "Helvetica"
+        changes.append("default_font = Helvetica")
+    
+    # Annotation: Use first free number (method 0)
+    if annotation.get("method") != 0:
+        annotation["method"] = 0
+        changes.append("annotation method = first free number")
+    
+    # Annotation: start number 0 (sort_order 0 means start from 0)
+    if annotation.get("sort_order") != 0:
+        annotation["sort_order"] = 0
+        changes.append("annotation sort_order = 0")
+    
+    # Color theme: use "user" theme (colors/user.json)
+    if appearance.get("color_theme") != "user":
+        appearance["color_theme"] = "user"
+        changes.append("color_theme = user")
+    
+    if changes:
+        with open(EESCHEMA_JSON, 'w') as f:
+            json.dump(config, f, indent=2)
+        for change in changes:
+            print_ok(change)
+    else:
+        print_ok("Schematic editor settings already configured")
+    
+    return True
+
+
+def configure_color_theme():
+    """Create or update user color theme for schematic editor."""
+    print_step("Configuring schematic color theme")
+    
+    # Create colors directory if needed
+    COLORS_DIR.mkdir(parents=True, exist_ok=True)
+    
+    theme_file = COLORS_DIR / "user.json"
+    
+    # Default color for all unspecified items (white)
+    default_color = "rgb(255, 255, 255)"
+    
+    # Custom schematic colors as specified
+    # KiCad uses "rgb(r, g, b)" format or "rgba(r, g, b, a)" for colors
+    schematic_colors = {
+        "anchor": default_color,
+        "aux_items": default_color,
+        "background": "rgb(0, 0, 0)",              # #000000FF
+        "brightened": default_color,
+        "bus": default_color,
+        "bus_junction": default_color,
+        "component_body": "rgb(32, 0, 0)",         # #200000FF (Symbol body fills)
+        "component_outline": "rgb(194, 0, 0)",     # #C20000FF (Symbol body outlines)
+        "cursor": "rgb(0, 255, 0)",                # #00FF00FF
+        "dnp_marker": default_color,
+        "erc_error": default_color,
+        "erc_exclusion": default_color,
+        "erc_warning": default_color,
+        "excluded_from_sim": default_color,
+        "fields": default_color,
+        "grid": "rgb(72, 72, 72)",                 # #484848FF
+        "grid_axes": default_color,
+        "hidden": default_color,
+        "hovered": default_color,
+        "junction": "rgb(0, 132, 0)",              # #008400FF (Junctions)
+        "label_global": "rgb(255, 255, 0)",        # #FFFF00FF (Labels - global)
+        "label_hier": "rgb(255, 255, 0)",          # #FFFF00FF (Labels - hierarchical)
+        "label_local": "rgb(255, 255, 0)",         # #FFFF00FF (Labels - local)
+        "netclass_flag": default_color,
+        "no_connect": default_color,
+        "note": "rgb(0, 255, 0)",                  # #00FF00FF (Schematic text & graphics)
+        "note_background": "rgba(0, 0, 0, 0.000)", # Transparent
+        "op_currents": default_color,
+        "op_voltages": default_color,
+        "override_item_colors": True,
+        "page_limits": default_color,
+        "pin": "rgb(194, 0, 0)",                   # #C20000FF (Pins)
+        "pin_name": "rgb(194, 194, 194)",          # #C2C2C2FF (Pin names)
+        "pin_number": "rgb(194, 194, 194)",        # #C2C2C2FF (Pin numbers)
+        "private_note": default_color,
+        "reference": "rgb(0, 255, 255)",           # #00FFFFFF (Symbol references)
+        "rule_area": "rgb(194, 0, 0)",             # #C20000FF (Rule areas)
+        "shadow": default_color,
+        "sheet": "rgb(255, 0, 0)",                 # #FF0000FF (Sheet borders)
+        "sheet_background": "rgb(0, 0, 0)",        # #000000FF (Sheet backgrounds)
+        "sheet_fields": default_color,
+        "sheet_filename": default_color,
+        "sheet_label": default_color,
+        "sheet_name": default_color,
+        "value": "rgb(0, 255, 255)",               # #00FFFFFF (Symbol values)
+        "wire": "rgb(0, 132, 0)",                  # #008400FF (Wires)
+        "worksheet": default_color
+    }
+    
+    # Load existing theme or create new
+    if theme_file.exists():
+        try:
+            with open(theme_file, 'r') as f:
+                theme = json.load(f)
+        except json.JSONDecodeError:
+            theme = {}
+    else:
+        theme = {}
+    
+    # Ensure structure exists
+    if "meta" not in theme:
+        theme["meta"] = {"name": "User", "version": 5}
+    if "schematic" not in theme:
+        theme["schematic"] = {}
+    
+    # Update schematic colors
+    changes = []
+    for key, value in schematic_colors.items():
+        if theme["schematic"].get(key) != value:
+            theme["schematic"][key] = value
+            if key in ["background", "cursor", "wire", "junction", "reference", "value", 
+                       "label_global", "label_hier", "label_local", "component_body", 
+                       "component_outline", "pin", "sheet"]:
+                changes.append(key)
+    
+    # Write theme file
+    with open(theme_file, 'w') as f:
+        json.dump(theme, f, indent=2)
+    
+    if changes:
+        print_ok(f"Updated color theme: {theme_file.name}")
+        print_ok("Background: black")
+        print_ok("Cursor/Text: green")
+        print_ok("Wires/Junctions: dark green")
+        print_ok("Symbols: red outlines, dark red fills")
+        print_ok("References/Values: cyan")
+        print_ok("Labels: yellow")
+    else:
+        print_ok(f"Color theme already configured: {theme_file.name}")
     
     return True
 
@@ -373,7 +619,7 @@ def main():
     
     # Check prerequisites
     if not check_prerequisites():
-        print("\n❌ Setup failed: missing prerequisites")
+        print("\nSetup failed: missing prerequisites")
         return 1
     
     # Check/install ODBC
@@ -381,54 +627,76 @@ def main():
         response = input("\nInstall ODBC drivers via Homebrew? [Y/n]: ").strip().lower()
         if response in ('', 'y', 'yes'):
             if not install_odbc():
-                print("\n❌ Setup failed: could not install ODBC")
+                print("\nSetup failed: could not install ODBC")
                 return 1
         else:
-            print("\n❌ Setup cancelled: ODBC drivers required")
+            print("\nSetup cancelled: ODBC drivers required")
             return 1
     
     # Configure ODBC
     if not configure_odbcinst():
-        print("\n❌ Setup failed: could not configure ODBC")
+        print("\nSetup failed: could not configure ODBC")
         return 1
     
     # Rebuild database
     if not rebuild_database():
-        print("\n❌ Setup failed: could not rebuild database")
+        print("\nSetup failed: could not rebuild database")
         return 1
     
     # Configure KiCad
     if not configure_path_variables():
-        print("\n❌ Setup failed: could not configure path variables")
+        print("\nSetup failed: could not configure path variables")
         return 1
     
     if not configure_symbol_libraries():
-        print("\n❌ Setup failed: could not configure symbol libraries")
+        print("\nSetup failed: could not configure symbol libraries")
         return 1
     
     if not configure_footprint_libraries():
-        print("\n❌ Setup failed: could not configure footprint libraries")
+        print("\nSetup failed: could not configure footprint libraries")
         return 1
     
     if not configure_hotkeys():
-        print("\n❌ Setup failed: could not configure hotkeys")
+        print("\nSetup failed: could not configure hotkeys")
+        return 1
+    
+    if not configure_mouse_settings():
+        print("\nSetup failed: could not configure mouse settings")
+        return 1
+    
+    if not configure_eeschema_settings():
+        print("\nSetup failed: could not configure schematic editor settings")
+        return 1
+    
+    if not configure_color_theme():
+        print("\nSetup failed: could not configure color theme")
         return 1
     
     print("\n" + "="*60)
-    print("  ✓ Setup complete!")
+    print("  Setup complete!")
     print("="*60)
     print("\nPlease restart KiCad for changes to take effect.")
     print("\nConfigured:")
     print("  Libraries:")
-    print("    • Generics - Generic symbols (R, C, L, D, LED, etc.)")
-    print("    • LCSC - Atomic symbols with pre-filled fields")
-    print("    • parts - Searchable database library")
-    print("    • LCSC (footprints) - Custom footprints")
+    print("    - Generics - Generic symbols (R, C, L, D, LED, etc.)")
+    print("    - LCSC - Atomic symbols with pre-filled fields")
+    print("    - parts - Searchable database library")
+    print("    - LCSC (footprints) - Custom footprints")
     print("  Hotkeys:")
-    print("    • 1/2/3/4 - Layer switching (F.Cu/B.Cu/In1/In2)")
-    print("    • M - Measure tool")
+    print("    - 1/2/3/4 - Layer switching (F.Cu/B.Cu/In1/In2)")
+    print("    - M - Measure tool")
+    print("    - H - Removed (was High Contrast Mode Cycle)")
+    print("  Mouse/Touchpad:")
+    print("    - Auto-pan enabled, speed 3/9")
+    print("    - Center on zoom disabled")
+    print("  Schematic Editor:")
+    print("    - Grid: dots")
+    print("    - Cursor: full window crosshairs")
+    print("    - Font: Helvetica")
+    print("    - Annotation: first free number after 0")
+    print("    - Theme: user (black bg, green/red/cyan)")
     print("\nTemplate:")
-    print("  JLCPCB_4Layer template available in File → New Project from Template")
+    print("  JLCPCB_4Layer template available in File -> New Project from Template")
     
     return 0
 
