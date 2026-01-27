@@ -14,6 +14,7 @@ It handles:
 8. Mouse/touchpad settings (auto-pan enabled, center-on-zoom disabled)
 9. Schematic editor display options (dots grid, full crosshairs, Helvetica font)
 10. Custom dark color theme for schematic editor (colors/user.json)
+11. Project template defaults (40 mil text size for labels)
 
 Run from any directory:
     python3 setup_kicad.py
@@ -66,6 +67,7 @@ PARTS_DBL = LCSC_DIR / "database" / "parts.kicad_dbl"
 LCSC_FP = LCSC_DIR / "footprints" / "LCSC.pretty"
 MODELS_DIR = KICAD_LIB_DIR / "3dmodels"
 DATABASE_DIR = LCSC_DIR / "database"
+TEMPLATE_DIR = KICAD_LIB_DIR / "template" / "JLCPCB_4Layer"
 
 
 def print_step(msg):
@@ -522,7 +524,7 @@ def configure_color_theme():
         "anchor": default_color,
         "aux_items": default_color,
         "background": "rgb(0, 0, 0)",              # #000000FF
-        "brightened": default_color,
+        "brightened": "rgb(72, 72, 72)",             # #484848FF (Highlighted items)
         "bus": default_color,
         "bus_junction": default_color,
         "component_body": "rgb(32, 0, 0)",         # #200000FF (Symbol body fills)
@@ -556,7 +558,7 @@ def configure_color_theme():
         "private_note": default_color,
         "reference": "rgb(0, 255, 255)",           # #00FFFFFF (Symbol references)
         "rule_area": "rgb(194, 0, 0)",             # #C20000FF (Rule areas)
-        "shadow": default_color,
+        "shadow": "rgb(72, 72, 72)",               # #484848FF (Selection highlight)
         "sheet": "rgb(255, 0, 0)",                 # #FF0000FF (Sheet borders)
         "sheet_background": "rgb(0, 0, 0)",        # #000000FF (Sheet backgrounds)
         "sheet_fields": default_color,
@@ -591,7 +593,7 @@ def configure_color_theme():
             theme["schematic"][key] = value
             if key in ["background", "cursor", "wire", "junction", "reference", "value", 
                        "label_global", "label_hier", "label_local", "component_body", 
-                       "component_outline", "pin", "sheet"]:
+                       "component_outline", "pin", "sheet", "brightened", "shadow"]:
                 changes.append(key)
     
     # Write theme file
@@ -606,8 +608,56 @@ def configure_color_theme():
         print_ok("Symbols: red outlines, dark red fills")
         print_ok("References/Values: cyan")
         print_ok("Labels: yellow")
+        print_ok("Selection/Highlight: dark gray (#484848)")
     else:
         print_ok(f"Color theme already configured: {theme_file.name}")
+    
+    return True
+
+
+def configure_project_template():
+    """Configure default schematic settings in the JLCPCB_4Layer project template."""
+    print_step("Configuring project template defaults")
+    
+    template_pro = TEMPLATE_DIR / "JLCPCB_4Layer.kicad_pro"
+    
+    if not template_pro.exists():
+        print_warn(f"Project template not found: {template_pro}")
+        print_warn("Skipping template configuration")
+        return True  # Non-fatal
+    
+    try:
+        with open(template_pro, 'r') as f:
+            config = json.load(f)
+    except json.JSONDecodeError as e:
+        print_err(f"Invalid JSON in template: {e}")
+        return False
+    
+    changes = []
+    
+    # Ensure schematic.drawing structure exists
+    if "schematic" not in config or config["schematic"] is None:
+        config["schematic"] = {}
+    if "drawing" not in config["schematic"] or config["schematic"]["drawing"] is None:
+        config["schematic"]["drawing"] = {}
+    
+    drawing = config["schematic"]["drawing"]
+    
+    # Default text size: 40 mil (1016000 IU)
+    # This affects labels, text, and text boxes in new projects
+    # 1 mil = 25400 IU, so 40 mil = 1016000 IU
+    default_text_size = 1016000
+    if drawing.get("default_text_size") != default_text_size:
+        drawing["default_text_size"] = default_text_size
+        changes.append("default_text_size = 40 mil")
+    
+    if changes:
+        with open(template_pro, 'w') as f:
+            json.dump(config, f, indent=2)
+        for change in changes:
+            print_ok(change)
+    else:
+        print_ok("Project template already configured")
     
     return True
 
@@ -672,6 +722,10 @@ def main():
         print("\nSetup failed: could not configure color theme")
         return 1
     
+    if not configure_project_template():
+        print("\nSetup failed: could not configure project template")
+        return 1
+    
     print("\n" + "="*60)
     print("  Setup complete!")
     print("="*60)
@@ -694,9 +748,10 @@ def main():
     print("    - Cursor: full window crosshairs")
     print("    - Font: Helvetica")
     print("    - Annotation: first free number after 0")
-    print("    - Theme: user (black bg, green/red/cyan)")
-    print("\nTemplate:")
-    print("  JLCPCB_4Layer template available in File -> New Project from Template")
+    print("    - Theme: user (black bg, green/red/cyan, dark gray selection)")
+    print("\nTemplate (JLCPCB_4Layer):")
+    print("    - Default text size: 40 mil (labels, text)")
+    print("    - Available in File -> New Project from Template")
     
     return 0
 
