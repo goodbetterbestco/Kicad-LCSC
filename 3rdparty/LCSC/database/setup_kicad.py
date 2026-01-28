@@ -17,7 +17,8 @@ It handles:
 11. Project template defaults (40 mil text size for labels)
 
 Run from any directory:
-    python3 setup_kicad.py
+    python3 setup_kicad.py                      # Full setup
+    python3 setup_kicad.py --patch-project .    # Patch current project only
 
 Requirements:
     - macOS with Homebrew
@@ -28,6 +29,7 @@ The JLCPCB_4Layer project template should be placed in:
     ~/Documents/KiCad/9.0/template/JLCPCB_4Layer/
 """
 
+import argparse
 import json
 import os
 import subprocess
@@ -68,6 +70,9 @@ LCSC_FP = LCSC_DIR / "footprints" / "LCSC.pretty"
 MODELS_DIR = KICAD_LIB_DIR / "3dmodels"
 DATABASE_DIR = LCSC_DIR / "database"
 TEMPLATE_DIR = KICAD_LIB_DIR / "template" / "JLCPCB_4Layer"
+
+# Default schematic text size: 40 mil (KiCad 9 stores as mils directly)
+DEFAULT_TEXT_SIZE = 40.0
 
 
 def print_step(msg):
@@ -615,6 +620,70 @@ def configure_color_theme():
     return True
 
 
+def patch_project_file(project_path):
+    """Patch a .kicad_pro file to set default text size to 40 mil.
+    
+    Args:
+        project_path: Path to .kicad_pro file or directory containing one
+        
+    Returns:
+        True on success, False on error
+    """
+    project_path = Path(project_path).expanduser().resolve()
+    
+    # If directory given, find .kicad_pro file
+    if project_path.is_dir():
+        pro_files = list(project_path.glob("*.kicad_pro"))
+        if not pro_files:
+            print_err(f"No .kicad_pro file found in: {project_path}")
+            return False
+        if len(pro_files) > 1:
+            print_warn(f"Multiple .kicad_pro files found, using: {pro_files[0].name}")
+        project_path = pro_files[0]
+    
+    if not project_path.exists():
+        print_err(f"Project file not found: {project_path}")
+        return False
+    
+    if project_path.suffix != ".kicad_pro":
+        print_err(f"Not a .kicad_pro file: {project_path}")
+        return False
+    
+    print_step(f"Patching project: {project_path.name}")
+    
+    try:
+        with open(project_path, 'r') as f:
+            config = json.load(f)
+    except json.JSONDecodeError as e:
+        print_err(f"Invalid JSON: {e}")
+        return False
+    
+    # Ensure schematic.drawing structure exists
+    if "schematic" not in config or config["schematic"] is None:
+        config["schematic"] = {}
+    if "drawing" not in config["schematic"] or config["schematic"]["drawing"] is None:
+        config["schematic"]["drawing"] = {}
+    
+    drawing = config["schematic"]["drawing"]
+    old_size = drawing.get("default_text_size")
+    
+    if old_size == DEFAULT_TEXT_SIZE:
+        print_ok(f"Already set to {DEFAULT_TEXT_SIZE:.0f} mil")
+        return True
+    
+    drawing["default_text_size"] = DEFAULT_TEXT_SIZE
+    
+    with open(project_path, 'w') as f:
+        json.dump(config, f, indent=2)
+    
+    if old_size:
+        print_ok(f"Changed default_text_size: {old_size} → {DEFAULT_TEXT_SIZE:.0f} mil")
+    else:
+        print_ok(f"Set default_text_size: {DEFAULT_TEXT_SIZE:.0f} mil")
+    
+    return True
+
+
 def configure_project_template():
     """Configure default schematic settings in the JLCPCB_4Layer project template."""
     print_step("Configuring project template defaults")
@@ -643,13 +712,10 @@ def configure_project_template():
     
     drawing = config["schematic"]["drawing"]
     
-    # Default text size: 40 mil (1016000 IU)
-    # This affects labels, text, and text boxes in new projects
-    # 1 mil = 25400 IU, so 40 mil = 1016000 IU
-    default_text_size = 1016000
-    if drawing.get("default_text_size") != default_text_size:
-        drawing["default_text_size"] = default_text_size
-        changes.append("default_text_size = 40 mil")
+    # Default text size: 40 mil (affects labels, text, and text boxes)
+    if drawing.get("default_text_size") != DEFAULT_TEXT_SIZE:
+        drawing["default_text_size"] = DEFAULT_TEXT_SIZE
+        changes.append(f"default_text_size = {DEFAULT_TEXT_SIZE:.0f} mil")
     
     if changes:
         with open(template_pro, 'w') as f:
@@ -663,6 +729,28 @@ def configure_project_template():
 
 
 def main():
+    parser = argparse.ArgumentParser(
+        description="KiCad LCSC Library Setup",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+Examples:
+  python3 setup_kicad.py                    # Full setup
+  python3 setup_kicad.py --patch-project .  # Patch current directory's project
+  python3 setup_kicad.py --patch-project ~/Projects/flipdots/hardware/flipdots
+"""
+    )
+    parser.add_argument(
+        "--patch-project", "-p",
+        metavar="PATH",
+        help="Patch an existing project's .kicad_pro to use 40 mil text (skips full setup)"
+    )
+    args = parser.parse_args()
+    
+    # If --patch-project specified, just patch and exit
+    if args.patch_project:
+        success = patch_project_file(args.patch_project)
+        return 0 if success else 1
+    
     print("\n" + "="*60)
     print("  KiCad LCSC Library Setup")
     print("="*60)
@@ -752,6 +840,8 @@ def main():
     print("\nTemplate (JLCPCB_4Layer):")
     print("    - Default text size: 40 mil (labels, text)")
     print("    - Available in File -> New Project from Template")
+    print("\nTo patch an existing project:")
+    print("    python3 setup_kicad.py --patch-project /path/to/project")
     
     return 0
 

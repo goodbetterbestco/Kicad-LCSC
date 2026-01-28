@@ -2390,7 +2390,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "Q"
-			(at 0 10.16 0)
+			(at -4.318 5.334 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2398,7 +2398,7 @@
 			)
 		)
 		(property "Value" "AO3401A"
-			(at 0 -10.16 0)
+			(at -0.254 -13.208 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2406,7 +2406,7 @@
 			)
 		)
 		(property "Footprint" "LCSC:Q_smd_SOT23_5"
-			(at 0 -12.7 0)
+			(at -0.254 -15.748 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2415,7 +2415,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/product-detail/MOSFET_AOS_AO3401A_AO3401A_C15127.html"
-			(at 0 -15.24 0)
+			(at -0.254 -18.288 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2433,7 +2433,7 @@
 			)
 		)
 		(property "LCSC Part" "C15127"
-			(at 0 -17.78 0)
+			(at -0.254 -20.828 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2444,7 +2444,7 @@
 		(symbol "AO3401A_0_1"
 			(polyline
 				(pts
-					(xy -2.54 0) (xy -0.51 0)
+					(xy -3.05 -2.29) (xy -3.05 2.29)
 				)
 				(stroke
 					(width 0)
@@ -2456,7 +2456,7 @@
 			)
 			(polyline
 				(pts
-					(xy -0.51 2.29) (xy -0.51 -2.29)
+					(xy -2.54 2.29) (xy -2.54 1.27)
 				)
 				(stroke
 					(width 0)
@@ -2468,7 +2468,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 1.27) (xy 0 2.29)
+					(xy -2.54 0.51) (xy -2.54 -0.51)
 				)
 				(stroke
 					(width 0)
@@ -2480,7 +2480,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 0) (xy 2.54 0) (xy 2.54 -2.54)
+					(xy -2.54 0) (xy -3.81 0)
 				)
 				(stroke
 					(width 0)
@@ -2492,7 +2492,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 -0.51) (xy 0 0.51)
+					(xy -2.54 0) (xy 0 0) (xy 0 2.54)
 				)
 				(stroke
 					(width 0)
@@ -2504,7 +2504,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 -2.29) (xy 0 -1.27)
+					(xy -2.54 -1.27) (xy -2.54 -2.29)
 				)
 				(stroke
 					(width 0)
@@ -2516,7 +2516,7 @@
 			)
 			(polyline
 				(pts
-					(xy 2.54 1.78) (xy 0 1.78)
+					(xy 0 2.54) (xy 0 3.81)
 				)
 				(stroke
 					(width 0)
@@ -2528,7 +2528,7 @@
 			)
 			(polyline
 				(pts
-					(xy 2.54 1.78) (xy 2.54 2.54) (xy 5.08 2.54) (xy 5.08 0.76)
+					(xy 0 2.54) (xy 2.54 2.54) (xy 2.54 0.51)
 				)
 				(stroke
 					(width 0)
@@ -2540,7 +2540,78 @@
 			)
 			(polyline
 				(pts
-					(xy 2.54 0) (xy 1.02 0.51) (xy 1.02 -0.51) (xy 2.54 0)
+					(xy 0 1.78) (xy -2.54 1.78)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 0) (xy -1.52 -0.51) (xy -1.52 0.51) (xy 0 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(circle
+				(center 0 0)
+				(radius 4.0161)
+				(stroke
+					(width 0.3048)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -1.78) (xy -2.54 -1.78)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -1.78) (xy 0 -2.54) (xy 2.54 -2.54) (xy 2.54 -0.76)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -2.54) (xy 0 -3.81)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 0.51) (xy 3.3 -0.76) (xy 1.78 -0.76) (xy 2.54 0.51)
 				)
 				(stroke
 					(width 0)
@@ -2552,43 +2623,7 @@
 			)
 			(polyline
 				(pts
-					(xy 2.54 -1.78) (xy 0 -1.78)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 2.54 -2.54) (xy 5.08 -2.54) (xy 5.08 -0.51)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 5.08 -0.51) (xy 5.84 0.76) (xy 4.32 0.76) (xy 5.08 -0.51)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-			(polyline
-				(pts
-					(xy 5.84 -0.51) (xy 5.59 -0.51) (xy 4.57 -0.51) (xy 4.32 -0.51)
+					(xy 3.3 0.51) (xy 3.05 0.51) (xy 2.03 0.51) (xy 1.78 0.51)
 				)
 				(stroke
 					(width 0)
@@ -2599,7 +2634,7 @@
 				)
 			)
 			(pin passive line
-				(at -5.08 0 0)
+				(at -6.35 0 0)
 				(length 2.54)
 				(name "G"
 					(effects
@@ -2617,25 +2652,7 @@
 				)
 			)
 			(pin passive line
-				(at 2.54 5.08 270)
-				(length 2.54)
-				(name "D"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 2.54 -5.08 90)
+				(at 0 6.35 270)
 				(length 2.54)
 				(name "S"
 					(effects
@@ -2645,6 +2662,24 @@
 					)
 				)
 				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -6.35 90)
+				(length 2.54)
+				(name "D"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2741,26 +2776,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at -12.7 0 0)
-				(length 2.54)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin input line
-				(at -12.7 -2.54 0)
+				(at -12.7 0 0)
 				(length 2.54)
 				(name "EN"
 					(effects
@@ -2770,6 +2787,24 @@
 					)
 				)
 				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -12.7 -2.54 0)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -7660,7 +7695,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "J"
-			(at 0 -6.35 0)
+			(at 0 10.414 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7668,7 +7703,7 @@
 			)
 		)
 		(property "Value" "DS1133-S60BPX"
-			(at 0 -16.51 0)
+			(at 0 -10.922 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7676,7 +7711,7 @@
 			)
 		)
 		(property "Footprint" ":RJ11-TH_DS1133-S60BPX"
-			(at 0 -19.05 0)
+			(at 0 -13.462 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7684,8 +7719,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/RJ11_RJ11Telephone-seat-connector-6P6C-Full-gold-black-No-shielding_C77859.html"
-			(at 0 -21.59 0)
+		(property "Datasheet" "/Users/evanthayer/lcsc/datasheets/C77859_DS1133-S60BPX.pdf"
+			(at 0 -16.002 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7703,7 +7738,7 @@
 			)
 		)
 		(property "LCSC Part" "C77859"
-			(at 0 -24.13 0)
+			(at 0 -18.542 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7712,23 +7747,25 @@
 			)
 		)
 		(symbol "DS1133-S60BPX_0_1"
+			(polyline
+				(pts
+					(xy -5.08 5.08) (xy -5.08 -6.35) (xy 5.08 -6.35) (xy 5.08 -3.81) (xy 6.35 -3.81) (xy 6.35 -2.54)
+					(xy 7.62 -2.54) (xy 7.62 2.54) (xy 6.35 2.54) (xy 6.35 3.81) (xy 5.08 3.81) (xy 5.08 5.08) (xy 5.08 6.35)
+					(xy -5.08 6.35) (xy -5.08 5.08)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "DS1133-S60BPX_1_1"
 			(rectangle
-				(start -8.89 12.7)
-				(end 8.89 -6.35)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-			(polyline
-				(pts
-					(xy -6.35 -5.08) (xy 6.35 -5.08) (xy 6.35 5.08) (xy 3.81 5.08) (xy 3.81 6.35) (xy 2.54 6.35) (xy 2.54 6.35)
-					(xy 2.54 7.62) (xy -2.54 7.62) (xy -2.54 6.35) (xy -3.81 6.35) (xy -3.81 5.08) (xy -6.35 5.08)
-					(xy -6.35 -5.08) (xy -6.35 -3.81)
-				)
+				(start -10.16 8.89)
+				(end 10.16 -8.89)
 				(stroke
 					(width 0)
 					(type default)
@@ -7737,89 +7774,17 @@
 					(type none)
 				)
 			)
-			(polyline
-				(pts
-					(xy -3.81 -5.08) (xy -3.81 -3.81) (xy -3.81 -3.81)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -2.54 -5.08) (xy -2.54 -3.81) (xy -2.54 -3.81)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -1.27 -5.08) (xy -1.27 -3.81) (xy -1.27 -3.81)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 1.27 -5.08) (xy 1.27 -3.81) (xy 1.27 -3.81)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 2.54 -5.08) (xy 2.54 -3.81) (xy 2.54 -3.81)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 3.81 -5.08) (xy 3.81 -3.81) (xy 3.81 -3.81)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(pin passive line
-				(at -6.35 -11.43 90)
-				(length 5.08)
-				(name "6"
+			(pin power_in line
+				(at -12.7 6.35 0)
+				(length 2.54)
+				(name "+5V"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "6"
+				(number "3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -7827,28 +7792,10 @@
 					)
 				)
 			)
-			(pin passive line
-				(at -3.81 -11.43 90)
-				(length 5.08)
-				(name "5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -1.27 -11.43 90)
-				(length 5.08)
-				(name "4"
+			(pin power_in line
+				(at -12.7 3.81 0)
+				(length 2.54)
+				(name "+5V"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -7864,27 +7811,9 @@
 				)
 			)
 			(pin passive line
-				(at 1.27 -11.43 90)
-				(length 5.08)
-				(name "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 3.81 -11.43 90)
-				(length 5.08)
-				(name "2"
+				(at -12.7 1.27 0)
+				(length 2.54)
+				(name "RX"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -7900,9 +7829,27 @@
 				)
 			)
 			(pin passive line
-				(at 6.35 -11.43 90)
-				(length 5.08)
-				(name "1"
+				(at -12.7 -1.27 0)
+				(length 2.54)
+				(name "TX"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -12.7 -3.81 0)
+				(length 2.54)
+				(name "GND"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -7910,6 +7857,24 @@
 					)
 				)
 				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -12.7 -6.35 0)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -10383,7 +10348,7 @@
 			)
 		)
 		(property "Value" "ESP32-S3-WROOM-1(N16R8)"
-			(at 0 -42.418 0)
+			(at -0.254 -42.418 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10391,7 +10356,7 @@
 			)
 		)
 		(property "Footprint" "LCSC:U_smd_module_ESP32S3"
-			(at 0 -44.958 0)
+			(at -0.254 -44.958 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10418,7 +10383,7 @@
 			)
 		)
 		(property "LCSC Part" "C2913202"
-			(at 0 -47.498 0)
+			(at -0.254 -47.498 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10441,24 +10406,6 @@
 			(pin power_in line
 				(at -16.51 38.1 0)
 				(length 2.54)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at -16.51 35.56 0)
-				(length 2.54)
 				(name "3V3"
 					(effects
 						(font
@@ -10474,8 +10421,26 @@
 					)
 				)
 			)
+			(pin power_in line
+				(at -16.51 35.56 0)
+				(length 2.54)
+				(name "VDD_SPI"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "26"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin input line
-				(at -16.51 33.02 0)
+				(at -16.51 30.48 0)
 				(length 2.54)
 				(name "EN"
 					(effects
@@ -10528,35 +10493,17 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at -16.51 22.86 0)
+			(pin input line
+				(at -16.51 12.7 0)
 				(length 2.54)
-				(name "USB_D+"
+				(name "LOG"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "14"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -16.51 20.32 0)
-				(length 2.54)
-				(name "USB_D-"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "13"
+				(number "16"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -10565,7 +10512,7 @@
 				)
 			)
 			(pin input line
-				(at -16.51 15.24 0)
+				(at -16.51 10.16 0)
 				(length 2.54)
 				(name "BOOT"
 					(effects
@@ -10582,35 +10529,17 @@
 					)
 				)
 			)
-			(pin input line
-				(at -16.51 10.16 0)
+			(pin power_in line
+				(at -16.51 -33.02 0)
 				(length 2.54)
-				(name "VDD_SPI"
+				(name "GND"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "26"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -16.51 7.62 0)
-				(length 2.54)
-				(name "LOG"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "16"
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -11160,8 +11089,44 @@
 			)
 		)
 		(symbol "ESP32-S3-WROOM-1(N16R8)_1_1"
+			(pin bidirectional line
+				(at -16.51 22.86 0)
+				(length 2.54)
+				(name "USB_DP"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -16.51 20.32 0)
+				(length 2.54)
+				(name "USB_DN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin input line
-				(at -16.51 12.7 0)
+				(at -16.51 15.24 0)
 				(length 2.54)
 				(name "JTAG_SEL"
 					(effects
@@ -14409,7 +14374,7 @@
 			(pin power_in line
 				(at -8.89 5.08 0)
 				(length 2.54)
-				(name "VDD"
+				(name "VCC"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -14427,24 +14392,6 @@
 			(pin input line
 				(at -8.89 2.54 0)
 				(length 2.54)
-				(name "WS"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -8.89 0 0)
-				(length 2.54)
 				(name "LR"
 					(effects
 						(font
@@ -14453,24 +14400,6 @@
 					)
 				)
 				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -8.89 -2.54 0)
-				(length 2.54)
-				(name "SCK"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "4"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -14507,6 +14436,42 @@
 					)
 				)
 				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 8.89 2.54 180)
+				(length 2.54)
+				(name "SCK"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 8.89 0 180)
+				(length 2.54)
+				(name "WS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -25090,7 +25055,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "SW"
-			(at 0 7.62 0)
+			(at 0 5.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25098,7 +25063,7 @@
 			)
 		)
 		(property "Value" "TS-1187A-B-A-B"
-			(at 0 -10.16 0)
+			(at 0 -5.588 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25106,7 +25071,7 @@
 			)
 		)
 		(property "Footprint" "LCSC:SW_smd_gen_5.1mm"
-			(at 0 -12.7 0)
+			(at 0 -8.128 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25115,7 +25080,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/product-detail/Tactile-Switches_XKB-Enterprise-TS-1187-B-A-A_C318884.html"
-			(at 0 -15.24 0)
+			(at 0 -10.668 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25133,7 +25098,7 @@
 			)
 		)
 		(property "LCSC Part" "C318884"
-			(at 0 -17.78 0)
+			(at 0 -13.208 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25156,7 +25121,7 @@
 			)
 			(polyline
 				(pts
-					(xy -2.54 -5.08) (xy 2.54 -5.08)
+					(xy -2.54 -2.54) (xy 2.54 -2.54)
 				)
 				(stroke
 					(width 0)
@@ -25168,19 +25133,7 @@
 			)
 			(polyline
 				(pts
-					(xy -0.51 0.76) (xy -1.27 -2.54)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 0.76) (xy 0 2.54)
+					(xy 0 2.54) (xy 0 1.27)
 				)
 				(stroke
 					(width 0)
@@ -25191,18 +25144,7 @@
 				)
 			)
 			(circle
-				(center 0 0.51)
-				(radius 0.32)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(circle
-				(center 0 -2.79)
+				(center 0 1.27)
 				(radius 0.32)
 				(stroke
 					(width 0)
@@ -25214,8 +25156,31 @@
 			)
 			(polyline
 				(pts
-					(xy 0 -3.3) (xy 0 -5.08)
+					(xy 0 1.27) (xy -1.27 -1.27)
 				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -1.27) (xy 0 -2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 0 -1.27)
+				(radius 0.32)
 				(stroke
 					(width 0)
 					(type default)
@@ -25225,8 +25190,8 @@
 				)
 			)
 			(pin passive line
-				(at -5.08 2.54 0)
-				(length 2.54)
+				(at -2.54 2.54 0)
+				(length 0)
 				(name "A"
 					(effects
 						(font
@@ -25243,8 +25208,8 @@
 				)
 			)
 			(pin passive line
-				(at -5.08 -5.08 0)
-				(length 2.54)
+				(at -2.54 -2.54 0)
+				(length 0)
 				(name "C"
 					(effects
 						(font
@@ -25261,8 +25226,8 @@
 				)
 			)
 			(pin passive line
-				(at 5.08 2.54 180)
-				(length 2.54)
+				(at 2.54 2.54 180)
+				(length 0)
 				(name "B"
 					(effects
 						(font
@@ -25279,8 +25244,8 @@
 				)
 			)
 			(pin passive line
-				(at 5.08 -5.08 180)
-				(length 2.54)
+				(at 2.54 -2.54 180)
+				(length 0)
 				(name "D"
 					(effects
 						(font
@@ -26398,42 +26363,6 @@
 			(pin bidirectional line
 				(at 11.43 11.43 180)
 				(length 2.54)
-				(name "DN1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "A7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 11.43 8.89 180)
-				(length 2.54)
-				(name "SBU1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "A8"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 11.43 3.81 180)
-				(length 2.54)
 				(name "DP2"
 					(effects
 						(font
@@ -26450,7 +26379,25 @@
 				)
 			)
 			(pin bidirectional line
-				(at 11.43 1.27 180)
+				(at 11.43 7.62 180)
+				(length 2.54)
+				(name "DN1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "A7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 11.43 5.08 180)
 				(length 2.54)
 				(name "DN2"
 					(effects
@@ -26460,6 +26407,24 @@
 					)
 				)
 				(number "B7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 11.43 1.27 180)
+				(length 2.54)
+				(name "SBU1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "A8"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -26960,7 +26925,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "D"
-			(at 0 7.62 0)
+			(at 0 16.002 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26968,7 +26933,7 @@
 			)
 		)
 		(property "Value" "USBLC6-2P6_C2827693"
-			(at 0 -9.398 0)
+			(at 0 -11.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26976,7 +26941,7 @@
 			)
 		)
 		(property "Footprint" "LCSC:U_smd_SOT666_6P"
-			(at 0 -11.938 0)
+			(at 0 -13.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27003,7 +26968,16 @@
 			)
 		)
 		(property "LCSC Part" "C2827693"
-			(at 0 -14.478 0)
+			(at 0 -16.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "esd tvs usb protection clamp"
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27013,8 +26987,8 @@
 		)
 		(symbol "USBLC6-2P6_C2827693_0_1"
 			(rectangle
-				(start -8.89 5.08)
-				(end 8.89 -7.62)
+				(start -7.62 12.7)
+				(end 7.62 -8.89)
 				(stroke
 					(width 0)
 					(type default)
@@ -27023,73 +26997,8 @@
 					(type background)
 				)
 			)
-			(circle
-				(center -7.62 3.81)
-				(radius 0.38)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(pin passive line
-				(at -11.43 2.54 0)
-				(length 2.54)
-				(name "I/O1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -11.43 0 0)
-				(length 2.54)
-				(name "I/O2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -11.43 -2.54 0)
-				(length 2.54)
-				(name "VBUS"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin power_in line
-				(at -11.43 -5.08 0)
+				(at -10.16 -6.35 0)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -27106,10 +27015,30 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 11.43 2.54 180)
+		)
+		(symbol "USBLC6-2P6_C2827693_1_1"
+			(pin power_in line
+				(at -10.16 10.16 0)
 				(length 2.54)
-				(name "I/O1"
+				(name "VBUS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -10.16 6.35 0)
+				(length 2.54)
+				(name "IO1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -27124,10 +27053,28 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 11.43 0 180)
+			(pin bidirectional line
+				(at -10.16 3.81 0)
 				(length 2.54)
-				(name "I/O2"
+				(name "IO1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -10.16 0 0)
+				(length 2.54)
+				(name "IO2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -27135,6 +27082,24 @@
 					)
 				)
 				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -10.16 -2.54 0)
+				(length 2.54)
+				(name "IO2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -27383,7 +27348,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "J"
-			(at 0 0 0)
+			(at 0 7.366 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27391,7 +27356,7 @@
 			)
 		)
 		(property "Value" "WJ500V-5.08-2P-14-00A"
-			(at 0 -10.16 0)
+			(at 0 -11.938 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27399,7 +27364,7 @@
 			)
 		)
 		(property "Footprint" "LCSC:J_tht_term_2P"
-			(at 0 -12.7 0)
+			(at 0 -14.478 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27408,7 +27373,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/product-detail/Terminal-Blocks_WJ500V-5-08-2P_C8465.html"
-			(at 0 -15.24 0)
+			(at 0 -16.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27426,7 +27391,7 @@
 			)
 		)
 		(property "LCSC Part" "C8465"
-			(at 0 -17.78 0)
+			(at 0 -19.558 0)
 			(effects
 				(font
 					(size 1.27 1.27)
