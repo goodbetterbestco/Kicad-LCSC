@@ -23,7 +23,7 @@ Run from any directory:
 Requirements:
     - macOS with Homebrew
     - KiCad 9.0 installed (launch once before running this script)
-    - LCSC library cloned to ~/Documents/KiCad/9.0/
+    - LCSC library cloned to ~/Documents/KiCad/9.0/3rdparty/lcsc/
 
 The JLCPCB_4Layer project template should be placed in:
     ~/Documents/KiCad/9.0/template/JLCPCB_4Layer/
@@ -62,12 +62,12 @@ HOTKEY_CHANGES = {
 }
 
 # Library paths (absolute)
-LCSC_DIR = KICAD_LIB_DIR / "3rdparty" / "LCSC"
-GENERICS_SYM = KICAD_LIB_DIR / "symbols" / "Generics.kicad_sym"
+LCSC_DIR = KICAD_LIB_DIR / "3rdparty" / "lcsc"
+GENERICS_SYM = LCSC_DIR / "symbols" / "Generics.kicad_sym"
 LCSC_SYM = LCSC_DIR / "symbols" / "LCSC.kicad_sym"
 PARTS_DBL = LCSC_DIR / "database" / "parts.kicad_dbl"
 LCSC_FP = LCSC_DIR / "footprints" / "LCSC.pretty"
-MODELS_DIR = KICAD_LIB_DIR / "3dmodels"
+MODELS_DIR = LCSC_DIR / "3dmodels"
 DATABASE_DIR = LCSC_DIR / "database"
 TEMPLATE_DIR = KICAD_LIB_DIR / "template" / "JLCPCB_4Layer"
 

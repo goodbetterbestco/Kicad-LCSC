@@ -14,8 +14,10 @@ A practical guide for creating professional IC symbols from datasheets.
    - Right side: power outputs, signal outputs, NC at bottom
    - Align bottom pins on both sides (grounds left ↔ NC right)
    - Flexible whitespace goes in the middle, not at top/bottom
+   - **ALL pin positions must be on 2.54mm grid**
 5. **Draw rectangle:** one pin spacing (2.54mm) border beyond outermost pins on all sides
 6. **Position properties:** Reference above rectangle, Value below
+7. **Verify grid alignment:** Every pin X and Y coordinate must be a multiple of 2.54mm
 
 ---
 
@@ -26,9 +28,10 @@ A practical guide for creating professional IC symbols from datasheets.
 2. [Pin Naming Conventions](#2-pin-naming-conventions)
 3. [Electrical Type Assignment](#3-electrical-type-assignment)
 4. [Symbol Layout Rules](#4-symbol-layout-rules)
-5. [Coordinate System](#5-coordinate-system)
+5. [Coordinate System & Grid Alignment](#5-coordinate-system--grid-alignment)
 6. [Verification Checklist](#6-verification-checklist)
 7. [Worked Example: MPM3610AGQV-Z](#7-worked-example-mpm3610agqv-z)
+8. [Worked Example: D_TVS_Quad_AAC](#8-worked-example-d_tvs_quad_aac)
 
 ---
 
@@ -46,6 +49,7 @@ easyeda2kicad --lcsc_id C5173872 --output ~/Documents/KiCad/9.0/3rdparty/LCSC
 - Electrical types (often all set to `unspecified`)
 - Pin layout (usually matches physical package, not logical function)
 - Symbol dimensions
+- **Pin positions (often off-grid)**
 
 ---
 
@@ -226,7 +230,7 @@ The IC outline rectangle extends **one pin spacing (2.54mm / 100mil)** beyond th
 
 ---
 
-## 5. Coordinate System
+## 5. Coordinate System & Grid Alignment
 
 ### 5.1: KiCad Symbol Coordinates
 
@@ -254,6 +258,66 @@ The IC outline rectangle extends **one pin spacing (2.54mm / 100mil)** beyond th
 | Text size | 1.27mm (50mil) |
 | Border offset | 2.54mm (100mil) |
 
+### 5.4: Grid Alignment (CRITICAL)
+
+**ALL pin endpoint positions MUST be multiples of 2.54mm (100mil).**
+
+This is non-negotiable. Off-grid pins cause:
+- Wires that won't connect in schematic
+- Frustrating debugging sessions
+- ERC errors that are hard to diagnose
+
+**Valid X positions:** ..., -10.16, -7.62, -5.08, -2.54, 0, 2.54, 5.08, 7.62, 10.16, ...
+
+**Valid Y positions:** ..., -10.16, -7.62, -5.08, -2.54, 0, 2.54, 5.08, 7.62, 10.16, ...
+
+**How to verify grid alignment:**
+1. In Symbol Editor, enable grid display (View → Grid)
+2. Set grid to 2.54mm (50mil also acceptable for fine work)
+3. Every pin endpoint must land exactly on a grid intersection
+4. Check pin properties: X and Y values should be multiples of 2.54
+
+**Common off-grid mistakes:**
+| Wrong | Correct |
+|-------|---------|
+| 1.905 | 2.54 |
+| 3.4925 | 2.54 or 5.08 |
+| -1.27 | 0 or -2.54 |
+| 6.35 | 5.08 or 7.62 |
+
+**Formula:** `valid_position = round(position / 2.54) * 2.54`
+
+### 5.5: Standard Y Positions (100mil grid)
+
+```
+Pin 1:  15.24   (top)
+Pin 2:  12.7
+Pin 3:  10.16
+Pin 4:   7.62
+Pin 5:   5.08
+Pin 6:   2.54
+Pin 7:   0
+Pin 8:  -2.54
+Pin 9:  -5.08
+Pin 10: -7.62
+Pin 11: -10.16
+Pin 12: -12.7
+Pin 13: -15.24
+Pin 14: -17.78  (bottom)
+```
+
+### 5.6: Standard X Positions for Multi-Pin Top/Bottom
+
+When placing multiple pins on top or bottom of a symbol (like TVS arrays, connectors), use these X positions:
+
+| Pin Count | X Positions |
+|-----------|-------------|
+| 2 pins | -2.54, 2.54 |
+| 3 pins | -5.08, 0, 5.08 |
+| 4 pins | -5.08, -2.54, 2.54, 5.08 |
+| 5 pins | -5.08, -2.54, 0, 2.54, 5.08 |
+| 6 pins | -7.62, -5.08, -2.54, 2.54, 5.08, 7.62 |
+
 ---
 
 ## 6. Verification Checklist
@@ -264,6 +328,12 @@ The IC outline rectangle extends **one pin spacing (2.54mm / 100mil)** beyond th
 - [ ] Pin names are clear and consistent
 - [ ] Electrical types are correct
 - [ ] Duplicate names allowed only for power/ground
+
+### Grid Alignment Verification (CRITICAL)
+- [ ] Every pin X coordinate is a multiple of 2.54mm
+- [ ] Every pin Y coordinate is a multiple of 2.54mm
+- [ ] Pin endpoints visually snap to grid intersections
+- [ ] No fractional values like 1.905, 3.4925, 6.35
 
 ### Layout Verification
 - [ ] Inputs on left, outputs on right
@@ -373,6 +443,81 @@ PGND (14)     Y=-17.78       NC (20)   ← aligned
 2. **Flexible whitespace**: Gap between BST (Y=2.54) and AGND (Y=-10.16) on left; gap between SW and NC on right
 3. **Rectangle border**: One pin spacing (2.54mm) beyond top pin (15.24→17.78) and bottom pin (-17.78→-20.32)
 4. **Pin X positions**: ±12.7mm (rectangle edge ± pin length)
+5. **Grid alignment**: ALL coordinates are multiples of 2.54mm
+
+---
+
+## 8. Worked Example: D_TVS_Quad_AAC
+
+A 6-pin quad TVS array (PESD5V0S4UD, SOT-457 package).
+
+### 8.1: Pin Categorization
+
+| Pin | Name | Category | Type | Side |
+|-----|------|----------|------|------|
+| 1 | I/O | Signal | passive | Top |
+| 2 | GND | Ground | power_in | Bottom |
+| 3 | I/O | Signal | passive | Top |
+| 4 | I/O | Signal | passive | Top |
+| 5 | I/O | Signal | passive | Top |
+| 6 | GND | Ground | power_in | Bottom |
+
+### 8.2: Layout Planning (Grid-Aligned)
+
+For a 4-over-2 pin arrangement:
+- 4 I/O pins on top: X = -5.08, -2.54, 2.54, 5.08
+- 2 GND pins on bottom: X = -2.54, 2.54
+
+```
+     1       3       4       5
+   -5.08   -2.54   2.54    5.08    ← ALL on 2.54mm grid
+     │       │       │       │
+   ┌─┴───────┴───────┴───────┴─┐
+   │ ▼       ▼       ▼       ▼ │
+   └─────────┬───────┬─────────┘
+             │       │
+             2       6
+           -2.54   2.54            ← ALL on 2.54mm grid
+            GND    GND
+```
+
+### 8.3: Pin Positions
+
+| Pin | Number | X | Y | Angle | Type |
+|-----|--------|---|---|-------|------|
+| I/O 1 | 1 | -5.08 | 5.08 | 270 | passive |
+| I/O 2 | 3 | -2.54 | 5.08 | 270 | passive |
+| I/O 3 | 4 | 2.54 | 5.08 | 270 | passive |
+| I/O 4 | 5 | 5.08 | 5.08 | 270 | passive |
+| GND | 2 | -2.54 | -5.08 | 90 | power_in |
+| GND | 6 | 2.54 | -5.08 | 90 | power_in |
+
+**Grid verification:** ✓ All values (-5.08, -2.54, 2.54, 5.08) are multiples of 2.54mm
+
+### 8.4: Rectangle Dimensions
+
+- Top pins at Y = 5.08 → Rectangle top: 5.08 - 2.54 = **2.54** (pins extend above)
+- Bottom pins at Y = -5.08 → Rectangle bottom: -5.08 + 2.54 = **-2.54** (pins extend below)
+- Left pin at X = -5.08 → Rectangle left: **-7.62**
+- Right pin at X = 5.08 → Rectangle right: **7.62**
+
+### 8.5: Common Mistake (Off-Grid)
+
+**WRONG** — These cause connection problems:
+```
+Pin 3: X = -1.905  ← NOT a multiple of 2.54
+Pin 4: X = 1.905   ← NOT a multiple of 2.54
+Pin 2: X = -3.4925 ← NOT a multiple of 2.54
+Pin 6: X = 3.4925  ← NOT a multiple of 2.54
+```
+
+**CORRECT** — Snap to grid:
+```
+Pin 3: X = -2.54   ← 2.54 × -1 = -2.54 ✓
+Pin 4: X = 2.54    ← 2.54 × 1 = 2.54 ✓
+Pin 2: X = -2.54   ← 2.54 × -1 = -2.54 ✓
+Pin 6: X = 2.54    ← 2.54 × 1 = 2.54 ✓
+```
 
 ---
 
@@ -383,7 +528,7 @@ PGND (14)     Y=-17.78       NC (20)   ← aligned
 (pin <type> <style>
     (at <x> <y> <angle>)
     (length 2.54)
-    (name "<name>" (effects (font (size 1.27 1.27))))
+    (name "<n>" (effects (font (size 1.27 1.27))))
     (number "<num>" (effects (font (size 1.27 1.27))))
 )
 ```
@@ -400,24 +545,29 @@ PGND (14)     Y=-17.78       NC (20)   ← aligned
 | Open Collector | `open_collector` |
 | No Connect | `no_connect` |
 
-### Standard Y Positions (100mil grid)
+### Grid-Aligned Position Reference
+
+**Multiples of 2.54mm:**
 ```
-Pin 1:  15.24   (top)
-Pin 2:  12.7
-Pin 3:  10.16
-Pin 4:   7.62
-Pin 5:   5.08
-Pin 6:   2.54
-Pin 7:   0
-Pin 8:  -2.54
-Pin 9:  -5.08
-Pin 10: -7.62
-Pin 11: -10.16
-Pin 12: -12.7
-Pin 13: -15.24
-Pin 14: -17.78  (bottom)
+×1:   2.54      ×-1:  -2.54
+×2:   5.08      ×-2:  -5.08
+×3:   7.62      ×-3:  -7.62
+×4:  10.16      ×-4: -10.16
+×5:  12.7       ×-5: -12.7
+×6:  15.24      ×-6: -15.24
+×7:  17.78      ×-7: -17.78
+×8:  20.32      ×-8: -20.32
 ```
+
+### Invalid Values (Common Mistakes)
+| Invalid | Nearest Valid |
+|---------|---------------|
+| 1.27 | 0 or 2.54 |
+| 1.905 | 2.54 |
+| 3.4925 | 2.54 or 5.08 |
+| 3.81 | 2.54 or 5.08 |
+| 6.35 | 5.08 or 7.62 |
 
 ---
 
-*Guide version 2.0 - Streamlined with explicit layout rules and practical example*
+*Guide version 3.0 - Added critical grid alignment rules and TVS array example*
